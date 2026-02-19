@@ -3,16 +3,92 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelionato de Notas e Protestos · Cavalcante/GO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    
+    <!-- Título SEO -->
+    <title>Tabelionato de Notas e Protestos de Cavalcante/GO | Cartório Oficial</title>
+    
+    <!-- Meta tags essenciais para SEO -->
+    <meta name="description" content="Tabelionato de Notas e Protestos de Cavalcante - GO. Serviços notariais: escrituras, procurações, reconhecimento de firma, autenticação, protestos e muito mais. Atendimento com ética e transparência.">
+    <meta name="keywords" content="cartório, tabelionato, notas, protestos, cavalcante, goiás, escritura, procuração, reconhecimento de firma, autenticação, ata notarial, testamento, união estável, divórcio, registro de imóveis">
+    <meta name="author" content="Tabelionato de Notas e Protestos de Cavalcante">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta name="language" content="Portuguese">
+    <meta name="geo.region" content="BR-GO">
+    <meta name="geo.placename" content="Cavalcante">
+    <meta name="geo.position" content="-13.7975;-47.4567">
+    <meta name="ICBM" content="-13.7975, -47.4567">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.tabelionatocavalcante.com.br">
+    <meta property="og:title" content="Tabelionato de Notas e Protestos de Cavalcante - GO">
+    <meta property="og:description" content="Serviços notariais com excelência e segurança jurídica. Escrituras, procurações, reconhecimento de firma e muito mais.">
+    <meta property="og:image" content="https://i.ibb.co/393X0XdS/logo2.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Tabelionato de Cavalcante">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://i.ibb.co/393X0XdS/logo2.png">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.tabelionatocavalcante.com.br">
+    <meta name="twitter:title" content="Tabelionato de Notas e Protestos de Cavalcante - GO">
+    <meta name="twitter:description" content="Serviços notariais com excelência e segurança jurídica">
+    <meta name="twitter:image" content="https://i.ibb.co/393X0XdS/logo2.png">
+
+    <!-- Favicon com múltiplos formatos -->
+    <link rel="icon" type="image/png" sizes="32x32" href="https://i.ibb.co/393X0XdS/logo2.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://i.ibb.co/393X0XdS/logo2.png">
+    <link rel="apple-touch-icon" href="https://i.ibb.co/393X0XdS/logo2.png">
     <link rel="shortcut icon" href="https://i.ibb.co/393X0XdS/logo2.png" type="image/png">
-
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.tabelionatocavalcante.com.br">
+    
+    <!-- Sitemap -->
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+    
+    <!-- Robots -->
+    <meta name="googlebot" content="index, follow">
+    <meta name="bingbot" content="index, follow">
+    
+    <!-- Verificação de propriedade (exemplo - substitua pelos códigos reais) -->
+    <meta name="google-site-verification" content="SEU_CODIGO_DE_VERIFICACAO_GOOGLE">
+    <meta name="msvalidate.01" content="SEU_CODIGO_VERIFICACAO_BING">
+    
     <!-- Tailwind + Font Awesome -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Content Security Policy (CSP) -->
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://cdnjs.cloudflare.com https://www.googletagmanager.com https://www.google-analytics.com;
+        style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com;
+        font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com;
+        img-src 'self' data: https://images.unsplash.com https://i.ibb.co;
+        connect-src 'self' https://www.google-analytics.com;
+        frame-src 'self' https://www.google.com;
+        object-src 'none';
+        base-uri 'self';
+        form-action 'self';
+        upgrade-insecure-requests;
+    ">
+    
+    <!-- X-Frame-Options (proteção contra clickjacking) -->
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    
+    <!-- X-Content-Type-Options (proteção contra MIME sniffing) -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    
+    <!-- Referrer Policy -->
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    
+    <!-- Permissions Policy -->
+    <meta http-equiv="Permissions-Policy" content="geolocation=(self), microphone=(), camera=(), payment=()">
+    
     <style>
         * {
             margin: 0;
@@ -25,6 +101,8 @@
             background: #0a1628;
             color: #fff;
             overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
 
         :root {
@@ -118,6 +196,7 @@
         .glass {
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
@@ -158,11 +237,18 @@
             border-radius: 0.5rem;
             transition: all 0.3s;
             box-shadow: 0 10px 25px rgba(212, 175, 55, 0.2);
+            position: relative;
+            overflow: hidden;
         }
 
         .btn-primary:hover {
             transform: translateY(-2px);
             box-shadow: 0 15px 35px rgba(212, 175, 55, 0.3);
+        }
+
+        .btn-primary:focus-visible {
+            outline: 3px solid #d4af37;
+            outline-offset: 2px;
         }
 
         .btn-outline {
@@ -181,11 +267,17 @@
             transform: translateY(-2px);
         }
 
+        .btn-outline:focus-visible {
+            outline: 3px solid #d4af37;
+            outline-offset: 2px;
+        }
+
         .service-card {
             transition: all 0.5s;
             cursor: pointer;
             background: linear-gradient(145deg, rgba(13, 29, 53, 0.8), rgba(10, 22, 40, 0.9));
             backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
             border: 1px solid rgba(212, 175, 55, 0.1);
         }
 
@@ -193,6 +285,11 @@
             transform: translateY(-10px);
             border-color: rgba(212, 175, 55, 0.3);
             box-shadow: 0 20px 40px -15px rgba(212, 175, 55, 0.2);
+        }
+
+        .service-card:focus-visible {
+            outline: 3px solid #d4af37;
+            outline-offset: 2px;
         }
 
         .whatsapp-float {
@@ -219,6 +316,11 @@
             box-shadow: 0 15px 35px rgba(37, 211, 102, 0.5);
         }
 
+        .whatsapp-btn:focus-visible {
+            outline: 3px solid #25D366;
+            outline-offset: 2px;
+        }
+
         .nav-link {
             position: relative;
             transition: color 0.3s;
@@ -237,6 +339,11 @@
 
         .nav-link:hover::after {
             width: 100%;
+        }
+
+        .nav-link:focus-visible {
+            outline: 3px solid #d4af37;
+            outline-offset: 2px;
         }
 
         .category-filter {
@@ -270,8 +377,9 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(0,0,0,0.5);
             backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
         }
 
         .modal-content {
@@ -285,7 +393,7 @@
             overflow-y: auto;
             position: relative;
             border: 1px solid rgba(212, 175, 55, 0.2);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
         }
 
         .close-button {
@@ -301,6 +409,11 @@
 
         .close-button:hover {
             color: #f4d03f;
+        }
+
+        .close-button:focus-visible {
+            outline: 3px solid #d4af37;
+            outline-offset: 2px;
         }
 
         .modal-content h2 {
@@ -345,6 +458,11 @@
         .lgpd-footer-button:hover {
             background-color: #d4af37;
             color: #0a1628;
+        }
+
+        .lgpd-footer-button:focus-visible {
+            outline: 3px solid #d4af37;
+            outline-offset: 2px;
         }
 
         /* Logo SVG styles */
@@ -409,6 +527,11 @@
             gap: 1rem;
         }
 
+        .back-button:focus-visible {
+            outline: 3px solid #d4af37;
+            outline-offset: 2px;
+        }
+
         /* Price Modal Styles */
         .price-modal {
             max-width: 1000px;
@@ -456,41 +579,65 @@
             font-weight: 600;
         }
 
+        /* Skip to content link for accessibility */
+        .skip-to-content {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #d4af37;
+            color: #0a1628;
+            padding: 8px 16px;
+            text-decoration: none;
+            font-weight: bold;
+            z-index: 10000;
+            transition: top 0.3s;
+        }
+
+        .skip-to-content:focus {
+            top: 0;
+        }
+
         @media (max-width: 768px) {
             .hero-text {
                 font-size: 2rem;
             }
-
+            
             .news-article {
                 padding: 1.5rem;
             }
-
+            
             .news-article h1 {
                 font-size: 1.8rem;
             }
-
+            
             .price-table-full {
                 font-size: 0.8rem;
             }
-
+            
             .price-table-full th,
             .price-table-full td {
                 padding: 0.5rem;
             }
         }
+
+        /* Structured data styles (hidden) */
+        .structured-data {
+            display: none;
+        }
     </style>
 </head>
 
 <body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-to-content">Pular para o conteúdo principal</a>
+
     <!-- Navbar -->
-    <nav class="fixed top-0 w-full z-50 glass border-b border-white/10">
+    <nav class="fixed top-0 w-full z-50 glass border-b border-white/10" aria-label="Menu principal">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <div class="flex items-center gap-3">
                     <!-- SVG Logo -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="logo-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo-svg" aria-label="Logo do Tabelionato" role="img">
                         <line x1="3" x2="21" y1="22" y2="22"></line>
                         <line x1="6" x2="6" y1="18" y2="11"></line>
                         <line x1="10" x2="10" y1="18" y2="11"></line>
@@ -505,28 +652,41 @@
                 </div>
 
                 <div class="hidden md:flex items-center gap-8">
-                    <a href="#home" class="nav-link text-white/80 hover:text-white">Início</a>
+                    <a href="#home" class="nav-link text-white/80 hover:text-white" aria-current="page">Início</a>
                     <a href="#servicos" class="nav-link text-white/80 hover:text-white">Serviços</a>
-                    <a href="#" onclick="openPriceModal(); return false;"
-                        class="nav-link text-white/80 hover:text-white">Tabela</a>
-                    <a href="#noticias" class="nav-link text-white/80 hover:text-white"
-                        onclick="showNewsSection()">Notícias</a>
+                    <a href="#" onclick="openPriceModal(); return false;" class="nav-link text-white/80 hover:text-white">Tabela</a>
+                    <a href="#noticias" class="nav-link text-white/80 hover:text-white" onclick="showNewsSection()">Notícias</a>
                     <a href="#contato" class="nav-link text-white/80 hover:text-white">Contato</a>
                 </div>
+
+                <!-- Mobile menu button (simplificado) -->
+                <button class="md:hidden text-white focus:outline-none focus:ring-2 focus:ring-[#d4af37]" aria-label="Menu mobile" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile menu (simplificado) -->
+        <div id="mobile-menu" class="md:hidden hidden glass border-t border-white/10 py-4">
+            <div class="flex flex-col items-center gap-4">
+                <a href="#home" class="text-white/80 hover:text-white" onclick="toggleMobileMenu()">Início</a>
+                <a href="#servicos" class="text-white/80 hover:text-white" onclick="toggleMobileMenu()">Serviços</a>
+                <a href="#" onclick="openPriceModal(); toggleMobileMenu(); return false;" class="text-white/80 hover:text-white">Tabela</a>
+                <a href="#noticias" class="text-white/80 hover:text-white" onclick="showNewsSection(); toggleMobileMenu()">Notícias</a>
+                <a href="#contato" class="text-white/80 hover:text-white" onclick="toggleMobileMenu()">Contato</a>
             </div>
         </div>
     </nav>
 
     <!-- Main Content Container -->
-    <div id="main-content">
+    <main id="main-content">
         <!-- Hero Section (Clareada) -->
-        <section id="home" class="relative min-h-screen flex items-center overflow-hidden pt-20">
+        <section id="home" class="relative min-h-screen flex items-center overflow-hidden pt-20" aria-label="Seção inicial">
             <div class="hero-bg absolute inset-0"></div>
             <div class="hero-overlay absolute inset-0"></div>
 
             <!-- Animated Elements -->
-            <div class="absolute top-20 left-10 w-72 h-72 bg-[#d4af37]/20 rounded-full blur-3xl animate-pulse-custom">
-            </div>
+            <div class="absolute top-20 left-10 w-72 h-72 bg-[#d4af37]/20 rounded-full blur-3xl animate-pulse-custom"></div>
             <div class="absolute bottom-20 right-10 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse-custom"
                 style="animation-delay: 1s;"></div>
 
@@ -554,12 +714,13 @@
                     </p>
 
                     <div class="flex flex-wrap gap-4 fade-in-up" style="animation-delay: 0.6s;">
-                        <a href="#" onclick="openPriceModal(); return false;" class="btn-primary inline-block">
-                            <i class="fas fa-scale-balanced mr-2"></i>
+                        <a href="#" onclick="openPriceModal(); return false;" class="btn-primary inline-block" aria-label="Ver tabela de preços">
+                            <i class="fas fa-scale-balanced mr-2" aria-hidden="true"></i>
                             Ver Tabela de Preços
                         </a>
-                        <a href="https://see.tjgo.jus.br/buscas" target="_blank" class="btn-outline inline-block">
-                            <i class="fas fa-badge-check mr-2"></i>
+                        <a href="https://see.tjgo.jus.br/buscas" target="_blank" rel="noopener noreferrer"
+                            class="btn-outline inline-block" aria-label="Consultar selo digital (abre em nova aba)">
+                            <i class="fas fa-badge-check mr-2" aria-hidden="true"></i>
                             Consultar Selo
                         </a>
                     </div>
@@ -567,7 +728,7 @@
             </div>
 
             <!-- Scroll Indicator -->
-            <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+            <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce" aria-hidden="true">
                 <div class="w-8 h-14 rounded-full border-2 border-white/20 flex items-start justify-center p-2">
                     <div class="w-1.5 h-3 bg-[#d4af37] rounded-full animate-pulse-custom"></div>
                 </div>
@@ -575,7 +736,7 @@
         </section>
 
         <!-- Services Section -->
-        <section id="servicos" class="py-24 relative bg-gradient-to-b from-[#0a1628] via-[#0d1d35] to-[#0a1628]">
+        <section id="servicos" class="py-24 relative bg-gradient-to-b from-[#0a1628] via-[#0d1d35] to-[#0a1628]" aria-label="Serviços">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
                     <span class="text-[#d4af37] font-medium tracking-wider uppercase text-sm">Nossos Serviços</span>
@@ -583,8 +744,7 @@
                         Soluções Notariais Completas
                     </h2>
                     <p class="text-slate-400 max-w-2xl mx-auto text-lg">
-                        Oferecemos uma gama completa de serviços notariais com a mais alta qualidade e segurança
-                        jurídica.
+                        Oferecemos uma gama completa de serviços notariais com a mais alta qualidade e segurança jurídica.
                     </p>
                 </div>
 
@@ -593,7 +753,7 @@
         </section>
 
         <!-- Quick Links -->
-        <section class="py-24 relative overflow-hidden">
+        <section class="py-24 relative overflow-hidden" aria-label="Links rápidos">
             <div class="absolute inset-0">
                 <div class="absolute inset-0 bg-cover bg-center"
                     style="background-image: url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1920&q=80');">
@@ -603,13 +763,13 @@
 
             <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid md:grid-cols-2 gap-8">
-                    <a href="https://see.tjgo.jus.br/buscas" target="_blank" class="group">
+                    <a href="https://see.tjgo.jus.br/buscas" target="_blank" rel="noopener noreferrer" class="group">
                         <div class="glass rounded-2xl p-8 hover:border-[#d4af37]/50 transition-all duration-500">
                             <div class="flex items-start justify-between">
                                 <div>
                                     <div
                                         class="w-14 h-14 rounded-2xl gradient-gold flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                                        <i class="fas fa-badge-check text-2xl text-[#0a1628]"></i>
+                                        <i class="fas fa-badge-check text-2xl text-[#0a1628]" aria-hidden="true"></i>
                                     </div>
                                     <h3
                                         class="text-2xl font-bold text-white mb-2 group-hover:text-[#d4af37] transition-colors">
@@ -618,18 +778,18 @@
                                     <p class="text-slate-400">Verifique a autenticidade do selo digital</p>
                                 </div>
                                 <i
-                                    class="fas fa-external-link text-slate-500 group-hover:text-[#d4af37] transition-colors"></i>
+                                    class="fas fa-external-link text-slate-500 group-hover:text-[#d4af37] transition-colors" aria-hidden="true"></i>
                             </div>
                         </div>
                     </a>
 
-                    <a href="https://www.e-notariado.org.br/customer/service-providers" target="_blank" class="group">
+                    <a href="https://www.e-notariado.org.br/customer/service-providers" target="_blank" rel="noopener noreferrer" class="group">
                         <div class="glass rounded-2xl p-8 hover:border-[#d4af37]/50 transition-all duration-500">
                             <div class="flex items-start justify-between">
                                 <div>
                                     <div
                                         class="w-14 h-14 rounded-2xl gradient-gold flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                                        <i class="fas fa-globe text-2xl text-[#0a1628]"></i>
+                                        <i class="fas fa-globe text-2xl text-[#0a1628]" aria-hidden="true"></i>
                                     </div>
                                     <h3
                                         class="text-2xl font-bold text-white mb-2 group-hover:text-[#d4af37] transition-colors">
@@ -638,7 +798,7 @@
                                     <p class="text-slate-400">Acesse a plataforma digital de serviços notariais</p>
                                 </div>
                                 <i
-                                    class="fas fa-external-link text-slate-500 group-hover:text-[#d4af37] transition-colors"></i>
+                                    class="fas fa-external-link text-slate-500 group-hover:text-[#d4af37] transition-colors" aria-hidden="true"></i>
                             </div>
                         </div>
                     </a>
@@ -647,7 +807,7 @@
         </section>
 
         <!-- News Section -->
-        <section id="noticias" class="py-24 relative bg-[#0a1628]">
+        <section id="noticias" class="py-24 relative bg-[#0a1628]" aria-label="Notícias">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
                     <span class="text-[#d4af37] font-medium tracking-wider uppercase text-sm">Informação em Tempo
@@ -665,7 +825,7 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contato" class="py-24 relative bg-[#0d1d35]">
+        <section id="contato" class="py-24 relative bg-[#0d1d35]" aria-label="Contato">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
                     <span class="text-[#d4af37] font-medium tracking-wider uppercase text-sm">Contato</span>
@@ -678,7 +838,7 @@
                     <div class="glass rounded-2xl p-8 text-center hover:border-[#d4af37]/30 transition-all group">
                         <div
                             class="w-16 h-16 rounded-2xl bg-[#d4af37]/20 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-                            <i class="fas fa-map-marker-alt text-3xl text-[#d4af37]"></i>
+                            <i class="fas fa-map-marker-alt text-3xl text-[#d4af37]" aria-hidden="true"></i>
                         </div>
                         <h3 class="text-xl font-bold text-white mb-2">Endereço</h3>
                         <p class="text-slate-400">Rua 208, Quadra 79, Lote 01</p>
@@ -689,7 +849,7 @@
                     <div class="glass rounded-2xl p-8 text-center hover:border-[#d4af37]/30 transition-all group">
                         <div
                             class="w-16 h-16 rounded-2xl bg-[#d4af37]/20 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-                            <i class="fas fa-phone text-3xl text-[#d4af37]"></i>
+                            <i class="fas fa-phone text-3xl text-[#d4af37]" aria-hidden="true"></i>
                         </div>
                         <h3 class="text-xl font-bold text-white mb-2">Telefone / WhatsApp</h3>
                         <p class="text-[#d4af37] text-2xl font-bold">(62) 99629-7114</p>
@@ -699,7 +859,7 @@
                     <div class="glass rounded-2xl p-8 text-center hover:border-[#d4af37]/30 transition-all group">
                         <div
                             class="w-16 h-16 rounded-2xl bg-[#d4af37]/20 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-                            <i class="fas fa-envelope text-3xl text-[#d4af37]"></i>
+                            <i class="fas fa-envelope text-3xl text-[#d4af37]" aria-hidden="true"></i>
                         </div>
                         <h3 class="text-xl font-bold text-white mb-2">E-mail</h3>
                         <p class="text-[#d4af37] break-all">contato@cartoriodecavalcante.com.br</p>
@@ -710,98 +870,48 @@
                 <!-- Route Button -->
                 <div class="text-center mt-12">
                     <a href="https://www.google.com/maps/dir//Rua+208,+Quadra+79,+Lote+01+–+Setor+Morro+Encantado+Cavalcante+GO+73790-000"
-                        target="_blank"
+                        target="_blank" rel="noopener noreferrer"
                         class="inline-flex items-center gap-3 px-8 py-4 bg-[#d4af37] text-[#0a1628] rounded-lg font-semibold hover:bg-[#e5c158] transition-all group">
-                        <i class="fas fa-map-marked-alt group-hover:scale-110 transition-transform"></i>
+                        <i class="fas fa-map-marked-alt group-hover:scale-110 transition-transform" aria-hidden="true"></i>
                         <span>Traçar Rota no Google Maps</span>
                     </a>
                 </div>
             </div>
         </section>
-    </div>
+    </main>
 
     <!-- News Detail Page (hidden by default) -->
-    <div id="news-detail-page" style="display: none;">
-        <!-- Content will be injected by JavaScript -->
-    </div>
+    <div id="news-detail-page" style="display: none;" role="region" aria-label="Detalhes da notícia"></div>
 
     <!-- Price Modal -->
-    <div id="priceModal" class="modal">
+    <div id="priceModal" class="modal" role="dialog" aria-modal="true" aria-label="Tabela de preços">
         <div class="modal-content price-modal">
-            <span class="close-button" onclick="closePriceModal()">&times;</span>
-            <h2 class="text-3xl text-center mb-6"><i class="fas fa-scale-balanced mr-3"></i>Tabela de Emolumentos 2023
-            </h2>
+            <button class="close-button" onclick="closePriceModal()" aria-label="Fechar">&times;</button>
+            <h2 class="text-3xl text-center mb-6"><i class="fas fa-scale-balanced mr-3" aria-hidden="true"></i>Tabela de Emolumentos 2023</h2>
             <p class="text-center text-slate-400 mb-8">Conforme Provimento nº 094/2022 CGJ-GO</p>
-
+            
             <div class="price-section">
                 <h3>Escrituras Públicas</h3>
                 <table class="price-table-full">
+                    <caption class="sr-only">Tabela de preços para escrituras públicas</caption>
                     <thead>
                         <tr>
-                            <th>Cód.</th>
-                            <th>Descrição</th>
-                            <th>Emolumento</th>
-                            <th>Taxas</th>
-                            <th>Total</th>
+                            <th scope="col">Cód.</th>
+                            <th scope="col">Descrição</th>
+                            <th scope="col">Emolumento</th>
+                            <th scope="col">Taxas</th>
+                            <th scope="col">Total</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>63 A I</td>
-                            <td>Escritura completa até R$ 587,03</td>
-                            <td>R$ 99,98</td>
-                            <td>R$ 76,38</td>
-                            <td class="total">R$ 176,35</td>
-                        </tr>
-                        <tr>
-                            <td>63 A II</td>
-                            <td>Escritura completa até R$ 1.174,07</td>
-                            <td>R$ 151,63</td>
-                            <td>R$ 89,93</td>
-                            <td class="total">R$ 241,56</td>
-                        </tr>
-                        <tr>
-                            <td>63 A III</td>
-                            <td>Escritura completa até R$ 2.348,13</td>
-                            <td>R$ 204,95</td>
-                            <td>R$ 103,93</td>
-                            <td class="total">R$ 308,88</td>
-                        </tr>
-                        <tr>
-                            <td>63 A IV</td>
-                            <td>Escritura completa até R$ 4.696,26</td>
-                            <td>R$ 286,57</td>
-                            <td>R$ 125,35</td>
-                            <td class="total">R$ 411,92</td>
-                        </tr>
-                        <tr>
-                            <td>63 A V</td>
-                            <td>Escritura completa até R$ 9.392,52</td>
-                            <td>R$ 571,50</td>
-                            <td>R$ 200,15</td>
-                            <td class="total">R$ 771,65</td>
-                        </tr>
-                        <tr>
-                            <td>63 A VI</td>
-                            <td>Escritura completa até R$ 14.088,79</td>
-                            <td>R$ 611,48</td>
-                            <td>R$ 210,64</td>
-                            <td class="total">R$ 822,12</td>
-                        </tr>
-                        <tr>
-                            <td>63 B</td>
-                            <td>Escritura completa sem valor econômico</td>
-                            <td>R$ 169,96</td>
-                            <td>R$ 94,74</td>
-                            <td class="total">R$ 264,70</td>
-                        </tr>
-                        <tr>
-                            <td>63 C</td>
-                            <td>Escritura completa de quitação</td>
-                            <td>R$ 169,96</td>
-                            <td>R$ 94,74</td>
-                            <td class="total">R$ 264,70</td>
-                        </tr>
+                        <tr><td>63 A I</td><td>Escritura completa até R$ 587,03</td><td>R$ 99,98</td><td>R$ 76,38</td><td class="total">R$ 176,35</td></tr>
+                        <tr><td>63 A II</td><td>Escritura completa até R$ 1.174,07</td><td>R$ 151,63</td><td>R$ 89,93</td><td class="total">R$ 241,56</td></tr>
+                        <tr><td>63 A III</td><td>Escritura completa até R$ 2.348,13</td><td>R$ 204,95</td><td>R$ 103,93</td><td class="total">R$ 308,88</td></tr>
+                        <tr><td>63 A IV</td><td>Escritura completa até R$ 4.696,26</td><td>R$ 286,57</td><td>R$ 125,35</td><td class="total">R$ 411,92</td></tr>
+                        <tr><td>63 A V</td><td>Escritura completa até R$ 9.392,52</td><td>R$ 571,50</td><td>R$ 200,15</td><td class="total">R$ 771,65</td></tr>
+                        <tr><td>63 A VI</td><td>Escritura completa até R$ 14.088,79</td><td>R$ 611,48</td><td>R$ 210,64</td><td class="total">R$ 822,12</td></tr>
+                        <tr><td>63 B</td><td>Escritura completa sem valor econômico</td><td>R$ 169,96</td><td>R$ 94,74</td><td class="total">R$ 264,70</td></tr>
+                        <tr><td>63 C</td><td>Escritura completa de quitação</td><td>R$ 169,96</td><td>R$ 94,74</td><td class="total">R$ 264,70</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -809,44 +919,21 @@
             <div class="price-section">
                 <h3>Procurações</h3>
                 <table class="price-table-full">
+                    <caption class="sr-only">Tabela de preços para procurações</caption>
                     <thead>
                         <tr>
-                            <th>Cód.</th>
-                            <th>Descrição</th>
-                            <th>Emolumento</th>
-                            <th>Taxas</th>
-                            <th>Total</th>
+                            <th scope="col">Cód.</th>
+                            <th scope="col">Descrição</th>
+                            <th scope="col">Emolumento</th>
+                            <th scope="col">Taxas</th>
+                            <th scope="col">Total</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>64 II</td>
-                            <td>Procuração Ad Judicia</td>
-                            <td>R$ 51,65</td>
-                            <td>R$ 30,98</td>
-                            <td class="total">R$ 82,63</td>
-                        </tr>
-                        <tr>
-                            <td>64 III</td>
-                            <td>Procuração Ad Negotia</td>
-                            <td>R$ 84,96</td>
-                            <td>R$ 39,72</td>
-                            <td class="total">R$ 124,68</td>
-                        </tr>
-                        <tr>
-                            <td>64 IV</td>
-                            <td>Procuração outras finalidades</td>
-                            <td>R$ 66,63</td>
-                            <td>R$ 34,91</td>
-                            <td class="total">R$ 101,54</td>
-                        </tr>
-                        <tr>
-                            <td>64 - 1a nota</td>
-                            <td>Por outorgante que acrescer</td>
-                            <td>R$ 6,67</td>
-                            <td>R$ 1,75</td>
-                            <td class="total">R$ 8,42</td>
-                        </tr>
+                        <tr><td>64 II</td><td>Procuração Ad Judicia</td><td>R$ 51,65</td><td>R$ 30,98</td><td class="total">R$ 82,63</td></tr>
+                        <tr><td>64 III</td><td>Procuração Ad Negotia</td><td>R$ 84,96</td><td>R$ 39,72</td><td class="total">R$ 124,68</td></tr>
+                        <tr><td>64 IV</td><td>Procuração outras finalidades</td><td>R$ 66,63</td><td>R$ 34,91</td><td class="total">R$ 101,54</td></tr>
+                        <tr><td>64 - 1a nota</td><td>Por outorgante que acrescer</td><td>R$ 6,67</td><td>R$ 1,75</td><td class="total">R$ 8,42</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -854,37 +941,20 @@
             <div class="price-section">
                 <h3>Reconhecimento e Autenticação</h3>
                 <table class="price-table-full">
+                    <caption class="sr-only">Tabela de preços para reconhecimento de firma e autenticação</caption>
                     <thead>
                         <tr>
-                            <th>Cód.</th>
-                            <th>Descrição</th>
-                            <th>Emolumento</th>
-                            <th>Taxas</th>
-                            <th>Total</th>
+                            <th scope="col">Cód.</th>
+                            <th scope="col">Descrição</th>
+                            <th scope="col">Emolumento</th>
+                            <th scope="col">Taxas</th>
+                            <th scope="col">Total</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>73 II</td>
-                            <td>Reconhecimento de firma digital impressa</td>
-                            <td>R$ 16,67</td>
-                            <td>R$ 4,38</td>
-                            <td class="total">R$ 21,05</td>
-                        </tr>
-                        <tr>
-                            <td>71 I</td>
-                            <td>Autenticação de cópia por página</td>
-                            <td>R$ 4,99</td>
-                            <td>R$ 1,31</td>
-                            <td class="total">R$ 6,30</td>
-                        </tr>
-                        <tr>
-                            <td>71 II</td>
-                            <td>Autenticação digitalizada e guardada</td>
-                            <td>R$ 10,00</td>
-                            <td>R$ 2,63</td>
-                            <td class="total">R$ 12,63</td>
-                        </tr>
+                        <tr><td>73 II</td><td>Reconhecimento de firma digital impressa</td><td>R$ 16,67</td><td>R$ 4,38</td><td class="total">R$ 21,05</td></tr>
+                        <tr><td>71 I</td><td>Autenticação de cópia por página</td><td>R$ 4,99</td><td>R$ 1,31</td><td class="total">R$ 6,30</td></tr>
+                        <tr><td>71 II</td><td>Autenticação digitalizada e guardada</td><td>R$ 10,00</td><td>R$ 2,63</td><td class="total">R$ 12,63</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -892,30 +962,19 @@
             <div class="price-section">
                 <h3>Ata Notarial</h3>
                 <table class="price-table-full">
+                    <caption class="sr-only">Tabela de preços para ata notarial</caption>
                     <thead>
                         <tr>
-                            <th>Cód.</th>
-                            <th>Descrição</th>
-                            <th>Emolumento</th>
-                            <th>Taxas</th>
-                            <th>Total</th>
+                            <th scope="col">Cód.</th>
+                            <th scope="col">Descrição</th>
+                            <th scope="col">Emolumento</th>
+                            <th scope="col">Taxas</th>
+                            <th scope="col">Total</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>72</td>
-                            <td>Ata Notarial para registro de chancela mecânica</td>
-                            <td>R$ 204,95</td>
-                            <td>R$ 53,80</td>
-                            <td class="total">R$ 258,75</td>
-                        </tr>
-                        <tr>
-                            <td>63 A I</td>
-                            <td>Ata Notarial Usucapião até R$ 587,03</td>
-                            <td>R$ 99,98</td>
-                            <td>R$ 76,38</td>
-                            <td class="total">R$ 176,35</td>
-                        </tr>
+                        <tr><td>72</td><td>Ata Notarial para registro de chancela mecânica</td><td>R$ 204,95</td><td>R$ 53,80</td><td class="total">R$ 258,75</td></tr>
+                        <tr><td>63 A I</td><td>Ata Notarial Usucapião até R$ 587,03</td><td>R$ 99,98</td><td>R$ 76,38</td><td class="total">R$ 176,35</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -923,30 +982,19 @@
             <div class="price-section">
                 <h3>Certidões</h3>
                 <table class="price-table-full">
+                    <caption class="sr-only">Tabela de preços para certidões</caption>
                     <thead>
                         <tr>
-                            <th>Cód.</th>
-                            <th>Descrição</th>
-                            <th>Emolumento</th>
-                            <th>Taxas</th>
-                            <th>Total</th>
+                            <th scope="col">Cód.</th>
+                            <th scope="col">Descrição</th>
+                            <th scope="col">Emolumento</th>
+                            <th scope="col">Taxas</th>
+                            <th scope="col">Total</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>98</td>
-                            <td>Certidões ou traslados</td>
-                            <td>R$ 51,65</td>
-                            <td>R$ 30,98</td>
-                            <td class="total">R$ 82,63</td>
-                        </tr>
-                        <tr>
-                            <td>99</td>
-                            <td>Certidão por página que acresce</td>
-                            <td>R$ 3,34</td>
-                            <td>R$ 0,88</td>
-                            <td class="total">R$ 4,22</td>
-                        </tr>
+                        <tr><td>98</td><td>Certidões ou traslados</td><td>R$ 51,65</td><td>R$ 30,98</td><td class="total">R$ 82,63</td></tr>
+                        <tr><td>99</td><td>Certidão por página que acresce</td><td>R$ 3,34</td><td>R$ 0,88</td><td class="total">R$ 4,22</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -954,48 +1002,34 @@
             <div class="price-section">
                 <h3>Testamentos</h3>
                 <table class="price-table-full">
+                    <caption class="sr-only">Tabela de preços para testamentos</caption>
                     <thead>
                         <tr>
-                            <th>Cód.</th>
-                            <th>Descrição</th>
-                            <th>Emolumento</th>
-                            <th>Taxas</th>
-                            <th>Total</th>
+                            <th scope="col">Cód.</th>
+                            <th scope="col">Descrição</th>
+                            <th scope="col">Emolumento</th>
+                            <th scope="col">Taxas</th>
+                            <th scope="col">Total</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>65 I A</td>
-                            <td>Testamento instituição de herdeiro</td>
-                            <td>R$ 304,91</td>
-                            <td>R$ 116,05</td>
-                            <td class="total">R$ 420,96</td>
-                        </tr>
-                        <tr>
-                            <td>65 I B</td>
-                            <td>Testamento com outras disposições</td>
-                            <td>R$ 459,86</td>
-                            <td>R$ 156,72</td>
-                            <td class="total">R$ 616,58</td>
-                        </tr>
+                        <tr><td>65 I A</td><td>Testamento instituição de herdeiro</td><td>R$ 304,91</td><td>R$ 116,05</td><td class="total">R$ 420,96</td></tr>
+                        <tr><td>65 I B</td><td>Testamento com outras disposições</td><td>R$ 459,86</td><td>R$ 156,72</td><td class="total">R$ 616,58</td></tr>
                     </tbody>
                 </table>
             </div>
 
-            <p class="text-center text-slate-400 text-sm mt-6">* Valores sujeitos a alteração conforme reajustes da
-                CGJ-GO</p>
+            <p class="text-center text-slate-400 text-sm mt-6">* Valores sujeitos a alteração conforme reajustes da CGJ-GO</p>
         </div>
     </div>
 
     <!-- Footer -->
-    <footer class="py-12 border-t border-white/10 bg-[#0a1628]">
+    <footer class="py-12 border-t border-white/10 bg-[#0a1628]" role="contentinfo">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-center gap-6">
                 <div class="flex items-center gap-3">
                     <!-- SVG Logo no footer -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="logo-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo-svg" aria-label="Logo do Tabelionato" role="img">
                         <line x1="3" x2="21" y1="22" y2="22"></line>
                         <line x1="6" x2="6" y1="18" y2="11"></line>
                         <line x1="10" x2="10" y1="18" y2="11"></line>
@@ -1011,8 +1045,8 @@
                 <div class="text-slate-500 text-sm">
                     © 2026 Todos os direitos reservados. Ética, Qualidade e Transparência.
                 </div>
-                <button onclick="openModal()" class="lgpd-footer-button">
-                    <i class="fas fa-shield-alt mr-2"></i>LGPD
+                <button onclick="openModal()" class="lgpd-footer-button" aria-label="Informações sobre LGPD">
+                    <i class="fas fa-shield-alt mr-2" aria-hidden="true"></i>LGPD
                 </button>
             </div>
         </div>
@@ -1021,8 +1055,8 @@
     <!-- WhatsApp Float Button -->
     <div class="whatsapp-float">
         <a href="https://wa.me/5562996297114?text=Olá!%20Gostaria%20de%20informações%20sobre%20os%20serviços%20do%20Tabelionato%20de%20Cavalcante."
-            target="_blank" class="whatsapp-btn group relative">
-            <i class="fab fa-whatsapp text-3xl text-white"></i>
+            target="_blank" rel="noopener noreferrer" class="whatsapp-btn group relative" aria-label="Fale conosco pelo WhatsApp (abre em nova aba)">
+            <i class="fab fa-whatsapp text-3xl text-white" aria-hidden="true"></i>
             <div
                 class="absolute right-full mr-4 top-1/2 -translate-y-1/2 bg-white text-gray-800 px-4 py-2 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
                 <span class="font-medium">Fale conosco!</span>
@@ -1031,41 +1065,105 @@
     </div>
 
     <!-- Modal LGPD -->
-    <div id="lgpdModal" class="modal">
+    <div id="lgpdModal" class="modal" role="dialog" aria-modal="true" aria-label="Política de privacidade LGPD">
         <div class="modal-content">
-            <span class="close-button" onclick="closeModal()">&times;</span>
-            <h2 class="text-2xl"><i class="fas fa-shield-alt mr-2"></i>Política de Proteção de Dados - LGPD</h2>
+            <button class="close-button" onclick="closeModal()" aria-label="Fechar">&times;</button>
+            <h2 class="text-2xl"><i class="fas fa-shield-alt mr-2" aria-hidden="true"></i>Política de Proteção de Dados - LGPD</h2>
             <p><strong class="text-[#d4af37]">LEI GERAL DE PROTEÇÃO DE DADOS – LGPD (LEI 13.709/2018)</strong></p>
-
-            <p>O TABELIONATO DE NOTAS E PROTESTOS DE CAVALCANTE – GO implementou em sua rotina a política de proteção de
-                dados dos usuários de seus serviços, colaboradores e prestadores de serviços, em cumprimento à Lei nº
-                13.709/2018 (LGPD), que se aplica às serventias extrajudiciais, nos seguintes termos:</p>
+            
+            <p>O TABELIONATO DE NOTAS E PROTESTOS DE CAVALCANTE – GO implementou em sua rotina a política de proteção de dados dos usuários de seus serviços, colaboradores e prestadores de serviços, em cumprimento à Lei nº 13.709/2018 (LGPD), que se aplica às serventias extrajudiciais, nos seguintes termos:</p>
 
             <div class="legal-text">
-                <p><strong>Art. 1º</strong> – Esta Lei dispõe sobre o tratamento de dados pessoais, inclusive nos meios
-                    digitais, por pessoa natural ou por pessoa jurídica de direito público ou privado, com o objetivo de
-                    proteger os direitos fundamentais de liberdade e de privacidade e o livre desenvolvimento da
-                    personalidade da pessoa natural.</p>
+                <p><strong>Art. 1º</strong> – Esta Lei dispõe sobre o tratamento de dados pessoais, inclusive nos meios digitais, por pessoa natural ou por pessoa jurídica de direito público ou privado, com o objetivo de proteger os direitos fundamentais de liberdade e de privacidade e o livre desenvolvimento da personalidade da pessoa natural.</p>
             </div>
 
             <div class="legal-text">
-                <p><strong>Art. 23, § 4º</strong> – Os serviços notariais e de registro exercidos em caráter privado,
-                    por delegação do Poder Público, terão o mesmo tratamento dispensado às pessoas jurídicas referidas
-                    no caput deste artigo, nos termos desta Lei.</p>
+                <p><strong>Art. 23, § 4º</strong> – Os serviços notariais e de registro exercidos em caráter privado, por delegação do Poder Público, terão o mesmo tratamento dispensado às pessoas jurídicas referidas no caput deste artigo, nos termos desta Lei.</p>
             </div>
 
             <h3 class="text-xl">Nosso Compromisso</h3>
-            <p>Estamos comprometidos com a proteção da sua privacidade e com o tratamento adequado dos seus dados
-                pessoais, conforme determina a legislação vigente. Para mais informações sobre como tratamos seus dados,
-                entre em contato conosco através do e-mail: lgpd@tabelionatocavalcante.com</p>
+            <p>Estamos comprometidos com a proteção da sua privacidade e com o tratamento adequado dos seus dados pessoais, conforme determina a legislação vigente. Para mais informações sobre como tratamos seus dados, entre em contato conosco através do e-mail: lgpd@tabelionatocavalcante.com</p>
 
             <h3 class="text-xl">Encarregado de Proteção de Dados (DPO)</h3>
-            <p><i class="fas fa-user text-[#d4af37] mr-2"></i> Nome: João Silva<br>
-                <i class="fas fa-envelope text-[#d4af37] mr-2"></i> E-mail: dpo@tabelionatocavalcante.com<br>
-                <i class="fas fa-phone text-[#d4af37] mr-2"></i> Telefone: (62) 3456-7890
-            </p>
+            <p><i class="fas fa-user text-[#d4af37] mr-2" aria-hidden="true"></i> Nome: João Silva<br>
+            <i class="fas fa-envelope text-[#d4af37] mr-2" aria-hidden="true"></i> E-mail: dpo@tabelionatocavalcante.com<br>
+            <i class="fas fa-phone text-[#d4af37] mr-2" aria-hidden="true"></i> Telefone: (62) 3456-7890</p>
         </div>
     </div>
+
+    <!-- Structured Data (JSON-LD) para SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LegalService",
+        "name": "Tabelionato de Notas e Protestos de Cavalcante",
+        "description": "Serviços notariais com excelência e segurança jurídica em Cavalcante - GO",
+        "url": "https://www.tabelionatocavalcante.com.br",
+        "logo": "https://i.ibb.co/393X0XdS/logo2.png",
+        "image": "https://i.ibb.co/393X0XdS/logo2.png",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Rua 208, Quadra 79, Lote 01",
+            "addressLocality": "Cavalcante",
+            "addressRegion": "GO",
+            "postalCode": "73790-000",
+            "addressCountry": "BR"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "-13.7975",
+            "longitude": "-47.4567"
+        },
+        "telephone": "+55 62 99629-7114",
+        "email": "contato@cartoriodecavalcante.com.br",
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "08:00",
+                "closes": "17:00"
+            }
+        ],
+        "sameAs": [
+            "https://www.facebook.com/tabelionatocavalcante",
+            "https://www.instagram.com/tabelionatocavalcante"
+        ],
+        "priceRange": "$$",
+        "areaServed": {
+            "@type": "City",
+            "name": "Cavalcante"
+        }
+    }
+    </script>
+
+    <!-- Local Business Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Tabelionato de Notas e Protestos de Cavalcante",
+        "description": "Cartório de notas e protestos em Cavalcante - GO",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Rua 208, Quadra 79, Lote 01",
+            "addressLocality": "Cavalcante",
+            "addressRegion": "GO",
+            "postalCode": "73790-000"
+        },
+        "telephone": "(62) 99629-7114",
+        "openingHours": "Mo-Fr 08:00-17:00",
+        "priceRange": "R$"
+    }
+    </script>
+
+    <!-- Google Analytics (opcional - substitua pelo seu ID) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script> -->
 
     <script>
         // Services Data with icons and gradients
@@ -1083,13 +1181,13 @@
 
         // News Data com conteúdo completo
         const newsData = [
-            {
+            { 
                 id: 1,
-                title: "STF decide sobre usucapião extrajudicial",
-                source: "Direito",
-                date: "19/02/2026",
-                category: "juridico",
-                icon: "fa-gavel",
+                title: "STF decide sobre usucapião extrajudicial", 
+                source: "Direito", 
+                date: "2026-02-19", 
+                category: "juridico", 
+                icon: "fa-gavel", 
                 color: "#8B5CF6",
                 content: `
                     <p>O Supremo Tribunal Federal (STF) decidiu nesta quinta-feira que o usucapião extrajudicial pode ser realizado diretamente em cartórios, sem necessidade de ação judicial, desde que haja concordância de todos os envolvidos.</p>
@@ -1098,13 +1196,13 @@
                     <p>A partir de agora, os cartórios de notas e registro de imóveis estão aptos a realizar todo o processo, desde que atendidos os requisitos legais e havendo consenso entre as partes.</p>
                 `
             },
-            {
+            { 
                 id: 2,
-                title: "Economia: Selic permanece em 13,75%",
-                source: "Economia",
-                date: "19/02/2026",
-                category: "economia",
-                icon: "fa-chart-line",
+                title: "Economia: Selic permanece em 13,75%", 
+                source: "Economia", 
+                date: "2026-02-19", 
+                category: "economia", 
+                icon: "fa-chart-line", 
                 color: "#10B981",
                 content: `
                     <p>O Comitê de Política Monetária (Copom) do Banco Central decidiu manter a taxa básica de juros, a Selic, em 13,75% ao ano, interrompendo o ciclo de quedas iniciado em agosto do ano passado.</p>
@@ -1113,13 +1211,13 @@
                     <p>Especialistas avaliam que a manutenção da Selic pode impactar o crédito imobiliário e o financiamento de imóveis, áreas diretamente relacionadas aos serviços notariais.</p>
                 `
             },
-            {
+            { 
                 id: 3,
-                title: "Cartórios digitais: nova plataforma e-Notariado",
-                source: "Tecnologia",
-                date: "18/02/2026",
-                category: "tecnologia",
-                icon: "fa-microchip",
+                title: "Cartórios digitais: nova plataforma e-Notariado", 
+                source: "Tecnologia", 
+                date: "2026-02-18", 
+                category: "tecnologia", 
+                icon: "fa-microchip", 
                 color: "#3B82F6",
                 content: `
                     <p>A plataforma e-Notariado acaba de lançar uma nova versão com funcionalidades avançadas para realização de atos notariais digitais em todo o Brasil.</p>
@@ -1128,13 +1226,13 @@
                     <p>O Tabelionato de Cavalcante já está totalmente integrado à nova plataforma, oferecendo aos cidadãos a possibilidade de realizar diversos serviços sem sair de casa.</p>
                 `
             },
-            {
+            { 
                 id: 4,
-                title: "Reforma tributária impacta custas cartoriais",
-                source: "Política",
-                date: "18/02/2026",
-                category: "politica",
-                icon: "fa-landmark",
+                title: "Reforma tributária impacta custas cartoriais", 
+                source: "Política", 
+                date: "2026-02-18", 
+                category: "politica", 
+                icon: "fa-landmark", 
                 color: "#F59E0B",
                 content: `
                     <p>A reforma tributária em tramitação no Congresso Nacional pode alterar significativamente a forma de cobrança das custas cartoriais em todo o país.</p>
@@ -1143,13 +1241,13 @@
                     <p>O Colégio Notarial do Brasil já se manifestou favoravelmente à modernização do sistema tributário, mas alerta para a necessidade de preservar a segurança jurídica dos atos praticados.</p>
                 `
             },
-            {
+            { 
                 id: 5,
-                title: "LGPD: cartórios atualizam políticas de dados",
-                source: "Direito",
-                date: "17/02/2026",
-                category: "juridico",
-                icon: "fa-shield-halved",
+                title: "LGPD: cartórios atualizam políticas de dados", 
+                source: "Direito", 
+                date: "2026-02-17", 
+                category: "juridico", 
+                icon: "fa-shield-halved", 
                 color: "#EC4899",
                 content: `
                     <p>Os cartórios brasileiros estão implementando novas políticas de proteção de dados para adequação total à Lei Geral de Proteção de Dados (LGPD).</p>
@@ -1158,13 +1256,13 @@
                     <p>Os usuários podem solicitar informações sobre o tratamento de seus dados através do e-mail lgpd@tabelionatocavalcante.com.</p>
                 `
             },
-            {
+            { 
                 id: 6,
-                title: "Novas regras para protesto de títulos",
-                source: "Cotidiano",
-                date: "17/02/2026",
-                category: "cotidiano",
-                icon: "fa-file-invoice",
+                title: "Novas regras para protesto de títulos", 
+                source: "Cotidiano", 
+                date: "2026-02-17", 
+                category: "cotidiano", 
+                icon: "fa-file-invoice", 
                 color: "#6366F1",
                 content: `
                     <p>Entraram em vigor nesta semana novas regras para o protesto de títulos em todo o estado de Goiás, com o objetivo de modernizar e agilizar os procedimentos.</p>
@@ -1180,9 +1278,9 @@
             const grid = document.getElementById('services-grid');
             if (!grid) return;
             grid.innerHTML = services.map((service, index) => `
-                <div class="service-card rounded-2xl p-6 fade-in-up" style="animation-delay: ${index * 0.1}s;">
+                <div class="service-card rounded-2xl p-6 fade-in-up" style="animation-delay: ${index * 0.1}s;" tabindex="0" role="article">
                     <div class="w-14 h-14 rounded-2xl bg-gradient-to-br ${service.gradient} flex items-center justify-center mb-6">
-                        <i class="fas ${service.icon} text-2xl text-white"></i>
+                        <i class="fas ${service.icon} text-2xl text-white" aria-hidden="true"></i>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-3">${service.title}</h3>
                     <p class="text-slate-400 leading-relaxed">${service.description}</p>
@@ -1194,25 +1292,31 @@
         function renderNews() {
             const grid = document.getElementById('news-grid');
             if (!grid) return;
-
+            
             grid.innerHTML = newsData.map((news, index) => `
-                <div class="glass rounded-2xl p-6 fade-in-up hover:border-[#d4af37]/30 transition-all cursor-pointer" style="animation-delay: ${index * 0.1}s;" onclick="showNewsDetail(${news.id})">
+                <div class="glass rounded-2xl p-6 fade-in-up hover:border-[#d4af37]/30 transition-all cursor-pointer" style="animation-delay: ${index * 0.1}s;" onclick="showNewsDetail(${news.id})" tabindex="0" role="article" aria-label="Notícia: ${news.title}">
                     <div class="flex items-center gap-3 mb-4">
                         <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background: ${news.color}20;">
-                            <i class="fas ${news.icon}" style="color: ${news.color}"></i>
+                            <i class="fas ${news.icon}" style="color: ${news.color}" aria-hidden="true"></i>
                         </div>
                         <span class="text-sm text-slate-400">${news.source}</span>
                     </div>
                     <h3 class="text-lg font-bold text-white mb-2 line-clamp-2">${news.title}</h3>
                     <p class="text-slate-400 text-sm mb-4 line-clamp-3">${stripHtml(news.content.substring(0, 150))}...</p>
                     <div class="flex items-center justify-between mt-4">
-                        <span class="text-xs text-slate-500"><i class="far fa-calendar mr-1"></i>${news.date}</span>
+                        <span class="text-xs text-slate-500"><i class="far fa-calendar mr-1" aria-hidden="true"></i>${formatDate(news.date)}</span>
                         <span class="text-[#d4af37] hover:text-[#e5c158] text-sm inline-flex items-center gap-1">
-                            Leia mais <i class="fas fa-arrow-right text-xs"></i>
+                            Leia mais <i class="fas fa-arrow-right text-xs" aria-hidden="true"></i>
                         </span>
                     </div>
                 </div>
             `).join('');
+        }
+
+        // Format date to Brazilian format
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            return date.toLocaleDateString('pt-BR');
         }
 
         // Helper function to strip HTML tags
@@ -1229,32 +1333,35 @@
 
             const mainContent = document.getElementById('main-content');
             const newsDetail = document.getElementById('news-detail-page');
-
+            
             // Hide main content, show news detail
             mainContent.style.display = 'none';
             newsDetail.style.display = 'block';
-
+            
             // Scroll to top
             window.scrollTo(0, 0);
-
+            
+            // Update page title for SEO
+            document.title = `${news.title} | Tabelionato de Cavalcante`;
+            
             // Render news detail
             newsDetail.innerHTML = `
                 <div class="news-page">
-                    <a href="#" onclick="showNewsSection(); return false;" class="back-button">
-                        <i class="fas fa-arrow-left"></i> Voltar para notícias
+                    <a href="#" onclick="showNewsSection(); return false;" class="back-button" aria-label="Voltar para lista de notícias">
+                        <i class="fas fa-arrow-left" aria-hidden="true"></i> Voltar para notícias
                     </a>
                     
                     <div class="news-article fade-in-up">
                         <div class="flex items-center gap-3 mb-6">
                             <div class="w-12 h-12 rounded-xl flex items-center justify-center" style="background: ${news.color}20;">
-                                <i class="fas ${news.icon} text-2xl" style="color: ${news.color}"></i>
+                                <i class="fas ${news.icon} text-2xl" style="color: ${news.color}" aria-hidden="true"></i>
                             </div>
                             <div>
                                 <h1 class="text-3xl md:text-4xl font-bold text-white">${news.title}</h1>
                                 <div class="news-meta">
-                                    <span><i class="far fa-calendar mr-2"></i>${news.date}</span>
-                                    <span><i class="far fa-newspaper mr-2"></i>${news.source}</span>
-                                    <span><i class="far fa-folder mr-2"></i>${news.category}</span>
+                                    <span><i class="far fa-calendar mr-2" aria-hidden="true"></i>${formatDate(news.date)}</span>
+                                    <span><i class="far fa-newspaper mr-2" aria-hidden="true"></i>${news.source}</span>
+                                    <span><i class="far fa-folder mr-2" aria-hidden="true"></i>${news.category}</span>
                                 </div>
                             </div>
                         </div>
@@ -1265,20 +1372,20 @@
                         
                         <div class="mt-8 pt-6 border-t border-white/10">
                             <p class="text-slate-400 text-sm">
-                                <i class="fas fa-share-alt mr-2"></i> Compartilhe esta notícia:
+                                <i class="fas fa-share-alt mr-2" aria-hidden="true"></i> Compartilhe esta notícia:
                             </p>
                             <div class="flex gap-3 mt-3">
-                                <a href="#" onclick="shareNews('facebook', ${news.id}); return false;" class="text-[#d4af37] hover:text-white transition-colors">
-                                    <i class="fab fa-facebook-f text-xl"></i>
+                                <a href="#" onclick="shareNews('facebook', ${news.id}); return false;" class="text-[#d4af37] hover:text-white transition-colors" aria-label="Compartilhar no Facebook">
+                                    <i class="fab fa-facebook-f text-xl" aria-hidden="true"></i>
                                 </a>
-                                <a href="#" onclick="shareNews('twitter', ${news.id}); return false;" class="text-[#d4af37] hover:text-white transition-colors">
-                                    <i class="fab fa-twitter text-xl"></i>
+                                <a href="#" onclick="shareNews('twitter', ${news.id}); return false;" class="text-[#d4af37] hover:text-white transition-colors" aria-label="Compartilhar no Twitter">
+                                    <i class="fab fa-twitter text-xl" aria-hidden="true"></i>
                                 </a>
-                                <a href="#" onclick="shareNews('whatsapp', ${news.id}); return false;" class="text-[#d4af37] hover:text-white transition-colors">
-                                    <i class="fab fa-whatsapp text-xl"></i>
+                                <a href="#" onclick="shareNews('whatsapp', ${news.id}); return false;" class="text-[#d4af37] hover:text-white transition-colors" aria-label="Compartilhar no WhatsApp">
+                                    <i class="fab fa-whatsapp text-xl" aria-hidden="true"></i>
                                 </a>
-                                <a href="#" onclick="shareNews('linkedin', ${news.id}); return false;" class="text-[#d4af37] hover:text-white transition-colors">
-                                    <i class="fab fa-linkedin-in text-xl"></i>
+                                <a href="#" onclick="shareNews('linkedin', ${news.id}); return false;" class="text-[#d4af37] hover:text-white transition-colors" aria-label="Compartilhar no LinkedIn">
+                                    <i class="fab fa-linkedin-in text-xl" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
@@ -1289,17 +1396,17 @@
                         <h2 class="text-2xl font-bold text-white mb-6">Notícias Relacionadas</h2>
                         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                             ${newsData.filter(n => n.id !== newsId).slice(0, 3).map(related => `
-                                <div class="glass rounded-2xl p-6 hover:border-[#d4af37]/30 transition-all cursor-pointer" onclick="showNewsDetail(${related.id})">
+                                <div class="glass rounded-2xl p-6 hover:border-[#d4af37]/30 transition-all cursor-pointer" onclick="showNewsDetail(${related.id})" tabindex="0" role="article">
                                     <div class="flex items-center gap-3 mb-4">
                                         <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background: ${related.color}20;">
-                                            <i class="fas ${related.icon}" style="color: ${related.color}"></i>
+                                            <i class="fas ${related.icon}" style="color: ${related.color}" aria-hidden="true"></i>
                                         </div>
                                         <span class="text-sm text-slate-400">${related.source}</span>
                                     </div>
                                     <h3 class="text-lg font-bold text-white mb-2 line-clamp-2">${related.title}</h3>
                                     <p class="text-slate-400 text-sm mb-4 line-clamp-2">${stripHtml(related.content.substring(0, 100))}...</p>
                                     <div class="flex items-center justify-between mt-4">
-                                        <span class="text-xs text-slate-500"><i class="far fa-calendar mr-1"></i>${related.date}</span>
+                                        <span class="text-xs text-slate-500"><i class="far fa-calendar mr-1" aria-hidden="true"></i>${formatDate(related.date)}</span>
                                         <span class="text-[#d4af37] text-sm">Leia mais →</span>
                                     </div>
                                 </div>
@@ -1314,10 +1421,13 @@
         function showNewsSection() {
             const mainContent = document.getElementById('main-content');
             const newsDetail = document.getElementById('news-detail-page');
-
+            
             mainContent.style.display = 'block';
             newsDetail.style.display = 'none';
-
+            
+            // Restore original title
+            document.title = "Tabelionato de Notas e Protestos de Cavalcante/GO | Cartório Oficial";
+            
             // Scroll to news section
             document.getElementById('noticias').scrollIntoView({ behavior: 'smooth' });
         }
@@ -1326,12 +1436,12 @@
         function shareNews(platform, newsId) {
             const news = newsData.find(n => n.id === newsId);
             if (!news) return;
-
+            
             const url = window.location.href;
-            const text = `Confira esta notícia: ${news.title}`;
-
+            const text = `Confira esta notícia do Tabelionato de Cavalcante: ${news.title}`;
+            
             let shareUrl = '';
-            switch (platform) {
+            switch(platform) {
                 case 'facebook':
                     shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&quote=${encodeURIComponent(text)}`;
                     break;
@@ -1345,8 +1455,8 @@
                     shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`;
                     break;
             }
-
-            window.open(shareUrl, '_blank', 'width=600,height=400');
+            
+            window.open(shareUrl, '_blank', 'width=600,height=400,noopener,noreferrer');
         }
 
         // Modal LGPD Functions
@@ -1371,8 +1481,14 @@
             document.body.style.overflow = 'auto';
         }
 
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
         // Fecha o modal se clicar fora dele
-        window.onclick = function (event) {
+        window.onclick = function(event) {
             const modal = document.getElementById('lgpdModal');
             const priceModal = document.getElementById('priceModal');
             if (event.target == modal) {
@@ -1384,20 +1500,26 @@
         }
 
         // Fecha o modal com a tecla ESC
-        document.addEventListener('keydown', function (event) {
+        document.addEventListener('keydown', function(event) {
             if (event.key === 'Escape') {
                 closeModal();
                 closePriceModal();
             }
         });
 
-        // Smooth scroll
+        // Smooth scroll para links internos
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href === '#') return;
+                
                 e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
+                const target = document.querySelector(href);
                 if (target) {
                     target.scrollIntoView({ behavior: 'smooth' });
+                    
+                    // Update URL without jumping
+                    history.pushState(null, null, href);
                 }
             });
         });
@@ -1415,6 +1537,17 @@
             window.showNewsDetail = showNewsDetail;
             window.showNewsSection = showNewsSection;
             window.shareNews = shareNews;
+            window.toggleMobileMenu = toggleMobileMenu;
+            
+            // Check for hash in URL and scroll to section
+            if (window.location.hash) {
+                const target = document.querySelector(window.location.hash);
+                if (target) {
+                    setTimeout(() => {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }, 100);
+                }
+            }
         });
     </script>
 </body>
