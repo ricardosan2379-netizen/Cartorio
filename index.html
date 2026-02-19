@@ -143,6 +143,11 @@
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
+            filter: brightness(1.2) contrast(0.9);
+        }
+
+        .hero-overlay {
+            background: linear-gradient(135deg, rgba(10, 22, 40, 0.85) 0%, rgba(13, 29, 53, 0.75) 50%, rgba(10, 22, 40, 0.6) 100%);
         }
 
         .btn-primary {
@@ -158,6 +163,22 @@
         .btn-primary:hover {
             transform: translateY(-2px);
             box-shadow: 0 15px 35px rgba(212, 175, 55, 0.3);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid #d4af37;
+            color: #fff;
+            font-weight: 600;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            transition: all 0.3s;
+        }
+
+        .btn-outline:hover {
+            background: #d4af37;
+            color: #0a1628;
+            transform: translateY(-2px);
         }
 
         .service-card {
@@ -388,6 +409,53 @@
             gap: 1rem;
         }
 
+        /* Price Modal Styles */
+        .price-modal {
+            max-width: 1000px;
+            width: 95%;
+        }
+
+        .price-section {
+            margin-bottom: 2rem;
+        }
+
+        .price-section h3 {
+            color: #d4af37;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .price-table-full {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        .price-table-full th {
+            text-align: left;
+            padding: 0.75rem;
+            color: #d4af37;
+            font-weight: 600;
+            border-bottom: 2px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .price-table-full td {
+            padding: 0.75rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            color: #e2e8f0;
+        }
+
+        .price-table-full tr:hover {
+            background: rgba(212, 175, 55, 0.1);
+        }
+
+        .price-table-full .total {
+            color: #d4af37;
+            font-weight: 600;
+        }
+
         @media (max-width: 768px) {
             .hero-text {
                 font-size: 2rem;
@@ -399,6 +467,15 @@
 
             .news-article h1 {
                 font-size: 1.8rem;
+            }
+
+            .price-table-full {
+                font-size: 0.8rem;
+            }
+
+            .price-table-full th,
+            .price-table-full td {
+                padding: 0.5rem;
             }
         }
     </style>
@@ -430,7 +507,8 @@
                 <div class="hidden md:flex items-center gap-8">
                     <a href="#home" class="nav-link text-white/80 hover:text-white">Início</a>
                     <a href="#servicos" class="nav-link text-white/80 hover:text-white">Serviços</a>
-                    <a href="#tabela-precos" class="nav-link text-white/80 hover:text-white">Tabela</a>
+                    <a href="#" onclick="openPriceModal(); return false;"
+                        class="nav-link text-white/80 hover:text-white">Tabela</a>
                     <a href="#noticias" class="nav-link text-white/80 hover:text-white"
                         onclick="showNewsSection()">Notícias</a>
                     <a href="#contato" class="nav-link text-white/80 hover:text-white">Contato</a>
@@ -441,16 +519,15 @@
 
     <!-- Main Content Container -->
     <div id="main-content">
-        <!-- Hero Section -->
+        <!-- Hero Section (Clareada) -->
         <section id="home" class="relative min-h-screen flex items-center overflow-hidden pt-20">
             <div class="hero-bg absolute inset-0"></div>
-            <div class="absolute inset-0 bg-gradient-to-r from-[#0a1628] via-[#0a1628]/95 to-[#0a1628]/70"></div>
-            <div class="absolute inset-0 bg-gradient-to-t from-[#0a1628] via-transparent to-transparent"></div>
+            <div class="hero-overlay absolute inset-0"></div>
 
             <!-- Animated Elements -->
-            <div class="absolute top-20 left-10 w-72 h-72 bg-[#d4af37]/10 rounded-full blur-3xl animate-pulse-custom">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-[#d4af37]/20 rounded-full blur-3xl animate-pulse-custom">
             </div>
-            <div class="absolute bottom-20 right-10 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse-custom"
+            <div class="absolute bottom-20 right-10 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse-custom"
                 style="animation-delay: 1s;"></div>
 
             <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -470,19 +547,18 @@
                         </span>
                     </h1>
 
-                    <p class="text-xl text-slate-300 mb-8 leading-relaxed max-w-2xl fade-in-up"
+                    <p class="text-xl text-slate-200 mb-8 leading-relaxed max-w-2xl fade-in-up"
                         style="animation-delay: 0.4s;">
                         Transparência, Ética e Qualidade. Oferecemos serviços notariais com excelência
                         e segurança jurídica para você e sua família.
                     </p>
 
                     <div class="flex flex-wrap gap-4 fade-in-up" style="animation-delay: 0.6s;">
-                        <a href="#tabela-precos" class="btn-primary inline-block">
+                        <a href="#" onclick="openPriceModal(); return false;" class="btn-primary inline-block">
                             <i class="fas fa-scale-balanced mr-2"></i>
-                            Tabela de Preços 2023
+                            Ver Tabela de Preços
                         </a>
-                        <a href="https://see.tjgo.jus.br/buscas" target="_blank"
-                            class="glass px-8 py-4 rounded-lg text-white hover:bg-white/10 transition-all inline-block">
+                        <a href="https://see.tjgo.jus.br/buscas" target="_blank" class="btn-outline inline-block">
                             <i class="fas fa-badge-check mr-2"></i>
                             Consultar Selo
                         </a>
@@ -570,44 +646,6 @@
             </div>
         </section>
 
-        <!-- Price Table Section with Catalog Filter -->
-        <section id="tabela-precos" class="py-24 relative bg-gradient-to-b from-[#0d1d35] to-[#0a1628]">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <span class="text-[#d4af37] font-medium tracking-wider uppercase text-sm">Tabela de
-                        Emolumentos</span>
-                    <h2 class="text-3xl md:text-5xl font-bold text-white mt-4 mb-6">
-                        Valores Atualizados 2023
-                    </h2>
-                    <p class="text-slate-400 max-w-2xl mx-auto text-lg">
-                        Confira os valores conforme Provimento nº 094/2022 CGJ-GO
-                    </p>
-                </div>
-
-                <!-- Search and Filter -->
-                <div class="max-w-4xl mx-auto mb-12">
-                    <div class="relative mb-6">
-                        <i class="fas fa-search absolute left-4 top-1/2 -translate-y-1/2 text-slate-500"></i>
-                        <input type="text" id="search-input"
-                            placeholder="Buscar serviço por nome, valor ou descrição..."
-                            class="w-full pl-12 pr-4 py-4 glass rounded-xl text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-[#d4af37] transition-all">
-                    </div>
-
-                    <!-- Category Filters -->
-                    <div class="flex flex-wrap gap-2 justify-center" id="category-filters">
-                        <button
-                            class="category-filter active px-6 py-3 rounded-full glass text-white hover:bg-[#d4af37] hover:text-[#0a1628] transition-all"
-                            data-category="all">
-                            <i class="fas fa-layer-group mr-2"></i>Todos
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Price Tables -->
-                <div id="price-tables" class="space-y-8"></div>
-            </div>
-        </section>
-
         <!-- News Section -->
         <section id="noticias" class="py-24 relative bg-[#0a1628]">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -685,6 +723,268 @@
     <!-- News Detail Page (hidden by default) -->
     <div id="news-detail-page" style="display: none;">
         <!-- Content will be injected by JavaScript -->
+    </div>
+
+    <!-- Price Modal -->
+    <div id="priceModal" class="modal">
+        <div class="modal-content price-modal">
+            <span class="close-button" onclick="closePriceModal()">&times;</span>
+            <h2 class="text-3xl text-center mb-6"><i class="fas fa-scale-balanced mr-3"></i>Tabela de Emolumentos 2023
+            </h2>
+            <p class="text-center text-slate-400 mb-8">Conforme Provimento nº 094/2022 CGJ-GO</p>
+
+            <div class="price-section">
+                <h3>Escrituras Públicas</h3>
+                <table class="price-table-full">
+                    <thead>
+                        <tr>
+                            <th>Cód.</th>
+                            <th>Descrição</th>
+                            <th>Emolumento</th>
+                            <th>Taxas</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>63 A I</td>
+                            <td>Escritura completa até R$ 587,03</td>
+                            <td>R$ 99,98</td>
+                            <td>R$ 76,38</td>
+                            <td class="total">R$ 176,35</td>
+                        </tr>
+                        <tr>
+                            <td>63 A II</td>
+                            <td>Escritura completa até R$ 1.174,07</td>
+                            <td>R$ 151,63</td>
+                            <td>R$ 89,93</td>
+                            <td class="total">R$ 241,56</td>
+                        </tr>
+                        <tr>
+                            <td>63 A III</td>
+                            <td>Escritura completa até R$ 2.348,13</td>
+                            <td>R$ 204,95</td>
+                            <td>R$ 103,93</td>
+                            <td class="total">R$ 308,88</td>
+                        </tr>
+                        <tr>
+                            <td>63 A IV</td>
+                            <td>Escritura completa até R$ 4.696,26</td>
+                            <td>R$ 286,57</td>
+                            <td>R$ 125,35</td>
+                            <td class="total">R$ 411,92</td>
+                        </tr>
+                        <tr>
+                            <td>63 A V</td>
+                            <td>Escritura completa até R$ 9.392,52</td>
+                            <td>R$ 571,50</td>
+                            <td>R$ 200,15</td>
+                            <td class="total">R$ 771,65</td>
+                        </tr>
+                        <tr>
+                            <td>63 A VI</td>
+                            <td>Escritura completa até R$ 14.088,79</td>
+                            <td>R$ 611,48</td>
+                            <td>R$ 210,64</td>
+                            <td class="total">R$ 822,12</td>
+                        </tr>
+                        <tr>
+                            <td>63 B</td>
+                            <td>Escritura completa sem valor econômico</td>
+                            <td>R$ 169,96</td>
+                            <td>R$ 94,74</td>
+                            <td class="total">R$ 264,70</td>
+                        </tr>
+                        <tr>
+                            <td>63 C</td>
+                            <td>Escritura completa de quitação</td>
+                            <td>R$ 169,96</td>
+                            <td>R$ 94,74</td>
+                            <td class="total">R$ 264,70</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="price-section">
+                <h3>Procurações</h3>
+                <table class="price-table-full">
+                    <thead>
+                        <tr>
+                            <th>Cód.</th>
+                            <th>Descrição</th>
+                            <th>Emolumento</th>
+                            <th>Taxas</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>64 II</td>
+                            <td>Procuração Ad Judicia</td>
+                            <td>R$ 51,65</td>
+                            <td>R$ 30,98</td>
+                            <td class="total">R$ 82,63</td>
+                        </tr>
+                        <tr>
+                            <td>64 III</td>
+                            <td>Procuração Ad Negotia</td>
+                            <td>R$ 84,96</td>
+                            <td>R$ 39,72</td>
+                            <td class="total">R$ 124,68</td>
+                        </tr>
+                        <tr>
+                            <td>64 IV</td>
+                            <td>Procuração outras finalidades</td>
+                            <td>R$ 66,63</td>
+                            <td>R$ 34,91</td>
+                            <td class="total">R$ 101,54</td>
+                        </tr>
+                        <tr>
+                            <td>64 - 1a nota</td>
+                            <td>Por outorgante que acrescer</td>
+                            <td>R$ 6,67</td>
+                            <td>R$ 1,75</td>
+                            <td class="total">R$ 8,42</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="price-section">
+                <h3>Reconhecimento e Autenticação</h3>
+                <table class="price-table-full">
+                    <thead>
+                        <tr>
+                            <th>Cód.</th>
+                            <th>Descrição</th>
+                            <th>Emolumento</th>
+                            <th>Taxas</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>73 II</td>
+                            <td>Reconhecimento de firma digital impressa</td>
+                            <td>R$ 16,67</td>
+                            <td>R$ 4,38</td>
+                            <td class="total">R$ 21,05</td>
+                        </tr>
+                        <tr>
+                            <td>71 I</td>
+                            <td>Autenticação de cópia por página</td>
+                            <td>R$ 4,99</td>
+                            <td>R$ 1,31</td>
+                            <td class="total">R$ 6,30</td>
+                        </tr>
+                        <tr>
+                            <td>71 II</td>
+                            <td>Autenticação digitalizada e guardada</td>
+                            <td>R$ 10,00</td>
+                            <td>R$ 2,63</td>
+                            <td class="total">R$ 12,63</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="price-section">
+                <h3>Ata Notarial</h3>
+                <table class="price-table-full">
+                    <thead>
+                        <tr>
+                            <th>Cód.</th>
+                            <th>Descrição</th>
+                            <th>Emolumento</th>
+                            <th>Taxas</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>72</td>
+                            <td>Ata Notarial para registro de chancela mecânica</td>
+                            <td>R$ 204,95</td>
+                            <td>R$ 53,80</td>
+                            <td class="total">R$ 258,75</td>
+                        </tr>
+                        <tr>
+                            <td>63 A I</td>
+                            <td>Ata Notarial Usucapião até R$ 587,03</td>
+                            <td>R$ 99,98</td>
+                            <td>R$ 76,38</td>
+                            <td class="total">R$ 176,35</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="price-section">
+                <h3>Certidões</h3>
+                <table class="price-table-full">
+                    <thead>
+                        <tr>
+                            <th>Cód.</th>
+                            <th>Descrição</th>
+                            <th>Emolumento</th>
+                            <th>Taxas</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>98</td>
+                            <td>Certidões ou traslados</td>
+                            <td>R$ 51,65</td>
+                            <td>R$ 30,98</td>
+                            <td class="total">R$ 82,63</td>
+                        </tr>
+                        <tr>
+                            <td>99</td>
+                            <td>Certidão por página que acresce</td>
+                            <td>R$ 3,34</td>
+                            <td>R$ 0,88</td>
+                            <td class="total">R$ 4,22</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="price-section">
+                <h3>Testamentos</h3>
+                <table class="price-table-full">
+                    <thead>
+                        <tr>
+                            <th>Cód.</th>
+                            <th>Descrição</th>
+                            <th>Emolumento</th>
+                            <th>Taxas</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>65 I A</td>
+                            <td>Testamento instituição de herdeiro</td>
+                            <td>R$ 304,91</td>
+                            <td>R$ 116,05</td>
+                            <td class="total">R$ 420,96</td>
+                        </tr>
+                        <tr>
+                            <td>65 I B</td>
+                            <td>Testamento com outras disposições</td>
+                            <td>R$ 459,86</td>
+                            <td>R$ 156,72</td>
+                            <td class="total">R$ 616,58</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="text-center text-slate-400 text-sm mt-6">* Valores sujeitos a alteração conforme reajustes da
+                CGJ-GO</p>
+        </div>
     </div>
 
     <!-- Footer -->
@@ -780,43 +1080,6 @@
             { icon: 'fa-tree', title: 'Testamento Público', description: 'Planejamento sucessório com segurança jurídica', gradient: 'from-green-500 to-emerald-500' },
             { icon: 'fa-people-group', title: 'União Estável', description: 'Declaratória de união estável e dissolução', gradient: 'from-yellow-500 to-amber-500' }
         ];
-
-        // Complete Price Table Data from PDF
-        const priceData = {
-            "Escrituras Públicas": [
-                { cod: "63 A I", desc: "Escritura completa até R$ 587,03", faixa: "até R$ 587,03", emol: 99.98, iss: 5.00, fundos: 21.25, taxaJud: 50.13, total: 176.35 },
-                { cod: "63 A II", desc: "Escritura completa até R$ 1.174,07", faixa: "até R$ 1.174,07", emol: 151.63, iss: 7.58, fundos: 32.22, taxaJud: 50.13, total: 241.56 },
-                { cod: "63 A III", desc: "Escritura completa até R$ 2.348,13", faixa: "até R$ 2.348,13", emol: 204.95, iss: 10.25, fundos: 43.55, taxaJud: 50.13, total: 308.88 },
-                { cod: "63 A IV", desc: "Escritura completa até R$ 4.696,26", faixa: "até R$ 4.696,26", emol: 286.57, iss: 14.33, fundos: 60.90, taxaJud: 50.13, total: 411.92 },
-                { cod: "63 A V", desc: "Escritura completa até R$ 9.392,52", faixa: "até R$ 9.392,52", emol: 571.50, iss: 28.58, fundos: 121.44, taxaJud: 50.13, total: 771.65 },
-                { cod: "63 A VI", desc: "Escritura completa até R$ 14.088,79", faixa: "até R$ 14.088,79", emol: 611.48, iss: 30.57, fundos: 129.94, taxaJud: 50.13, total: 822.12 },
-                { cod: "63 B", desc: "Escritura completa sem valor econômico", faixa: "sem valor", emol: 169.96, iss: 8.50, fundos: 36.12, taxaJud: 50.13, total: 264.70 },
-                { cod: "63 C", desc: "Escritura completa de quitação", faixa: "sem valor", emol: 169.96, iss: 8.50, fundos: 36.12, taxaJud: 50.13, total: 264.70 }
-            ],
-            "Procurações": [
-                { cod: "64 II", desc: "Procuração Ad Judicia", faixa: "sem valor", emol: 51.65, iss: 2.58, fundos: 10.98, taxaJud: 17.42, total: 82.63 },
-                { cod: "64 III", desc: "Procuração Ad Negotia", faixa: "sem valor", emol: 84.96, iss: 4.25, fundos: 18.05, taxaJud: 17.42, total: 124.68 },
-                { cod: "64 IV", desc: "Procuração outras finalidades", faixa: "sem valor", emol: 66.63, iss: 3.33, fundos: 14.16, taxaJud: 17.42, total: 101.54 },
-                { cod: "64 - 1a nota", desc: "Por outorgante que acrescer", faixa: "sem valor", emol: 6.67, iss: 0.33, fundos: 1.42, taxaJud: 0, total: 8.42 }
-            ],
-            "Reconhecimento e Autenticação": [
-                { cod: "73 II", desc: "Reconhecimento de firma digital impressa", faixa: "sem valor", emol: 16.67, iss: 0.83, fundos: 3.54, taxaJud: 0, total: 21.05 },
-                { cod: "71 I", desc: "Autenticação de cópia por página", faixa: "por página", emol: 4.99, iss: 0.25, fundos: 1.06, taxaJud: 0, total: 6.30 },
-                { cod: "71 II", desc: "Autenticação digitalizada e guardada", faixa: "sem valor", emol: 10.00, iss: 0.50, fundos: 2.13, taxaJud: 0, total: 12.63 }
-            ],
-            "Ata Notarial": [
-                { cod: "72", desc: "Ata Notarial para registro de chancela mecânica", faixa: "sem valor", emol: 204.95, iss: 10.25, fundos: 43.55, taxaJud: 0, total: 258.75 },
-                { cod: "63 A I", desc: "Ata Notarial Usucapião até R$ 587,03", faixa: "até R$ 587,03", emol: 99.98, iss: 5.00, fundos: 21.25, taxaJud: 50.13, total: 176.35 }
-            ],
-            "Certidões": [
-                { cod: "98", desc: "Certidões ou traslados", faixa: "sem valor", emol: 51.65, iss: 2.58, fundos: 10.98, taxaJud: 17.42, total: 82.63 },
-                { cod: "99", desc: "Certidão por página que acresce", faixa: "por página", emol: 3.34, iss: 0.17, fundos: 0.71, taxaJud: 0, total: 4.22 }
-            ],
-            "Testamentos": [
-                { cod: "65 I A", desc: "Testamento instituição de herdeiro", faixa: "sem valor", emol: 304.91, iss: 15.25, fundos: 64.79, taxaJud: 36.01, total: 420.96 },
-                { cod: "65 I B", desc: "Testamento com outras disposições", faixa: "sem valor", emol: 459.86, iss: 22.99, fundos: 97.72, taxaJud: 36.01, total: 616.58 }
-            ]
-        };
 
         // News Data com conteúdo completo
         const newsData = [
@@ -925,125 +1188,6 @@
                     <p class="text-slate-400 leading-relaxed">${service.description}</p>
                 </div>
             `).join('');
-        }
-
-        // Render Category Filters
-        function renderCategoryFilters() {
-            const container = document.getElementById('category-filters');
-            if (!container) return;
-            const categories = Object.keys(priceData);
-
-            categories.forEach(category => {
-                const btn = document.createElement('button');
-                btn.className = 'category-filter px-6 py-3 rounded-full glass text-white hover:bg-[#d4af37] hover:text-[#0a1628] transition-all';
-                btn.setAttribute('data-category', category);
-                btn.innerHTML = `<i class="fas fa-tag mr-2"></i>${category}`;
-                container.appendChild(btn);
-            });
-
-            // Filter click handlers
-            document.querySelectorAll('.category-filter').forEach(btn => {
-                btn.addEventListener('click', function () {
-                    document.querySelectorAll('.category-filter').forEach(b => b.classList.remove('active'));
-                    this.classList.add('active');
-
-                    const category = this.dataset.category;
-                    filterPriceTables(category === 'all' ? null : category);
-                });
-            });
-        }
-
-        // Render Price Tables
-        function renderPriceTables() {
-            const container = document.getElementById('price-tables');
-            if (!container) return;
-            container.innerHTML = '';
-
-            Object.entries(priceData).forEach(([category, items]) => {
-                const tableDiv = document.createElement('div');
-                tableDiv.className = 'price-table glass rounded-2xl overflow-hidden';
-                tableDiv.setAttribute('data-category', category);
-
-                tableDiv.innerHTML = `
-                    <div class="bg-[#d4af37]/10 px-6 py-4 border-b border-white/10">
-                        <h3 class="text-xl font-bold text-white">${category}</h3>
-                    </div>
-                    <div class="p-6">
-                        <div class="overflow-x-auto">
-                            <table class="w-full">
-                                <thead>
-                                    <tr class="border-b border-white/10">
-                                        <th class="text-left text-slate-400 pb-3">Cód.</th>
-                                        <th class="text-left text-slate-400 pb-3">Descrição</th>
-                                        <th class="text-right text-slate-400 pb-3">Emolumento</th>
-                                        <th class="text-right text-slate-400 pb-3">Taxas</th>
-                                        <th class="text-right text-[#d4af37] pb-3">Total</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    ${items.map(item => `
-                                        <tr class="border-b border-white/5 hover:bg-white/5 transition-colors">
-                                            <td class="py-3 text-white">${item.cod}</td>
-                                            <td class="py-3 text-white">${item.desc}</td>
-                                            <td class="py-3 text-right text-white">R$ ${item.emol.toFixed(2)}</td>
-                                            <td class="py-3 text-right text-white">R$ ${(item.iss + item.fundos + item.taxaJud).toFixed(2)}</td>
-                                            <td class="py-3 text-right font-bold text-[#d4af37]">R$ ${item.total.toFixed(2)}</td>
-                                        </tr>
-                                    `).join('')}
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                `;
-
-                container.appendChild(tableDiv);
-            });
-        }
-
-        // Filter Price Tables
-        function filterPriceTables(category) {
-            const tables = document.querySelectorAll('.price-table');
-
-            tables.forEach(table => {
-                if (!category || table.dataset.category === category) {
-                    table.style.display = 'block';
-                    table.classList.add('slide-in');
-                } else {
-                    table.style.display = 'none';
-                }
-            });
-        }
-
-        // Search functionality
-        function setupSearch() {
-            const searchInput = document.getElementById('search-input');
-            if (!searchInput) return;
-
-            searchInput.addEventListener('input', function (e) {
-                const searchTerm = e.target.value.toLowerCase();
-                const allRows = document.querySelectorAll('.price-table tbody tr');
-
-                allRows.forEach(row => {
-                    const text = row.textContent.toLowerCase();
-                    if (text.includes(searchTerm) || searchTerm === '') {
-                        row.style.display = '';
-                    } else {
-                        row.style.display = 'none';
-                    }
-                });
-
-                // Show/hide tables based on visible rows
-                document.querySelectorAll('.price-table').forEach(table => {
-                    const visibleRows = table.querySelectorAll('tbody tr:not([style*="display: none"])').length;
-                    if (visibleRows === 0 && searchTerm !== '') {
-                        table.style.display = 'none';
-                    } else if (searchTerm === '') {
-                        // Reset table visibility based on active category filter
-                        const activeCategory = document.querySelector('.category-filter.active')?.dataset.category;
-                        filterPriceTables(activeCategory === 'all' ? null : activeCategory);
-                    }
-                });
-            });
         }
 
         // Render News Grid
@@ -1205,17 +1349,6 @@
             window.open(shareUrl, '_blank', 'width=600,height=400');
         }
 
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
-
         // Modal LGPD Functions
         function openModal() {
             document.getElementById('lgpdModal').style.display = 'block';
@@ -1227,11 +1360,26 @@
             document.body.style.overflow = 'auto';
         }
 
+        // Price Modal Functions
+        function openPriceModal() {
+            document.getElementById('priceModal').style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePriceModal() {
+            document.getElementById('priceModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
         // Fecha o modal se clicar fora dele
         window.onclick = function (event) {
             const modal = document.getElementById('lgpdModal');
+            const priceModal = document.getElementById('priceModal');
             if (event.target == modal) {
                 closeModal();
+            }
+            if (event.target == priceModal) {
+                closePriceModal();
             }
         }
 
@@ -1239,23 +1387,31 @@
         document.addEventListener('keydown', function (event) {
             if (event.key === 'Escape') {
                 closeModal();
+                closePriceModal();
             }
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
         });
 
         // Initialize
         window.addEventListener('DOMContentLoaded', function () {
             renderServices();
-            renderCategoryFilters();
-            renderPriceTables();
-            setupSearch();
             renderNews();
-
-            // Set "Todos" as active initially
-            filterPriceTables(null);
 
             // Expose functions globally
             window.openModal = openModal;
             window.closeModal = closeModal;
+            window.openPriceModal = openPriceModal;
+            window.closePriceModal = closePriceModal;
             window.showNewsDetail = showNewsDetail;
             window.showNewsSection = showNewsSection;
             window.shareNews = shareNews;
