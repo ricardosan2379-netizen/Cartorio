@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-    
+
     <!-- Título SEO -->
     <title>Tabelionato de Notas e Protestos de Cavalcante/GO | Cartório Oficial</title>
-    
+
     <!-- Meta tags essenciais para SEO -->
-    <meta name="description" content="Tabelionato de Notas e Protestos de Cavalcante - GO. Serviços notariais: escrituras, procurações, reconhecimento de firma, autenticação, protestos e muito mais. Atendimento com ética e transparência.">
-    <meta name="keywords" content="cartório, tabelionato, notas, protestos, cavalcante, goiás, escritura, procuração, reconhecimento de firma, autenticação, ata notarial, testamento, união estável, divórcio, registro de imóveis">
+    <meta name="description"
+        content="Tabelionato de Notas e Protestos de Cavalcante - GO. Serviços notariais: escrituras, procurações, reconhecimento de firma, autenticação, protestos e muito mais. Atendimento com ética e transparência.">
+    <meta name="keywords"
+        content="cartório, tabelionato, notas, protestos, cavalcante, goiás, escritura, procuração, reconhecimento de firma, autenticação, ata notarial, testamento, união estável, divórcio, registro de imóveis">
     <meta name="author" content="Tabelionato de Notas e Protestos de Cavalcante">
     <meta name="robots" content="index, follow">
     <meta name="revisit-after" content="7 days">
@@ -19,12 +21,13 @@
     <meta name="geo.placename" content="Cavalcante">
     <meta name="geo.position" content="-13.7975;-47.4567">
     <meta name="ICBM" content="-13.7975, -47.4567">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.tabelionatocavalcante.com.br">
     <meta property="og:title" content="Tabelionato de Notas e Protestos de Cavalcante - GO">
-    <meta property="og:description" content="Serviços notariais com excelência e segurança jurídica. Escrituras, procurações, reconhecimento de firma e muito mais.">
+    <meta property="og:description"
+        content="Serviços notariais com excelência e segurança jurídica. Escrituras, procurações, reconhecimento de firma e muito mais.">
     <meta property="og:image" content="https://i.ibb.co/393X0XdS/logo2.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -43,25 +46,25 @@
     <link rel="icon" type="image/png" sizes="16x16" href="https://i.ibb.co/393X0XdS/logo2.png">
     <link rel="apple-touch-icon" href="https://i.ibb.co/393X0XdS/logo2.png">
     <link rel="shortcut icon" href="https://i.ibb.co/393X0XdS/logo2.png" type="image/png">
-    
+
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.tabelionatocavalcante.com.br">
-    
+
     <!-- Sitemap -->
     <link rel="sitemap" type="application/xml" href="/sitemap.xml">
-    
+
     <!-- Robots -->
     <meta name="googlebot" content="index, follow">
     <meta name="bingbot" content="index, follow">
-    
+
     <!-- Verificação de propriedade (exemplo - substitua pelos códigos reais) -->
     <meta name="google-site-verification" content="SEU_CODIGO_DE_VERIFICACAO_GOOGLE">
     <meta name="msvalidate.01" content="SEU_CODIGO_VERIFICACAO_BING">
-    
+
     <!-- Tailwind + Font Awesome -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- Content Security Policy (CSP) -->
     <meta http-equiv="Content-Security-Policy" content="
         default-src 'self';
@@ -76,19 +79,19 @@
         form-action 'self';
         upgrade-insecure-requests;
     ">
-    
+
     <!-- X-Frame-Options (proteção contra clickjacking) -->
     <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
-    
+
     <!-- X-Content-Type-Options (proteção contra MIME sniffing) -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    
+
     <!-- Referrer Policy -->
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    
+
     <!-- Permissions Policy -->
     <meta http-equiv="Permissions-Policy" content="geolocation=(self), microphone=(), camera=(), payment=()">
-    
+
     <style>
         * {
             margin: 0;
@@ -377,7 +380,7 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0,0,0,0.5);
+            background-color: rgba(0, 0, 0, 0.5);
             backdrop-filter: blur(5px);
             -webkit-backdrop-filter: blur(5px);
         }
@@ -393,7 +396,7 @@
             overflow-y: auto;
             position: relative;
             border: 1px solid rgba(212, 175, 55, 0.2);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
         }
 
         .close-button {
@@ -534,12 +537,15 @@
 
         /* Price Modal Styles */
         .price-modal {
-            max-width: 1000px;
+            max-width: 1200px;
             width: 95%;
         }
 
         .price-section {
             margin-bottom: 2rem;
+            background: rgba(13, 29, 53, 0.6);
+            border-radius: 8px;
+            padding: 1.5rem;
         }
 
         .price-section h3 {
@@ -562,6 +568,7 @@
             color: #d4af37;
             font-weight: 600;
             border-bottom: 2px solid rgba(212, 175, 55, 0.3);
+            background: rgba(0, 0, 0, 0.2);
         }
 
         .price-table-full td {
@@ -577,6 +584,17 @@
         .price-table-full .total {
             color: #d4af37;
             font-weight: 600;
+        }
+
+        .price-table-full .valor {
+            text-align: right;
+        }
+
+        .obs-text {
+            font-size: 0.8rem;
+            color: #94a3b8;
+            margin-top: 1rem;
+            text-align: center;
         }
 
         /* Skip to content link for accessibility */
@@ -601,22 +619,26 @@
             .hero-text {
                 font-size: 2rem;
             }
-            
+
             .news-article {
                 padding: 1.5rem;
             }
-            
+
             .news-article h1 {
                 font-size: 1.8rem;
             }
-            
+
             .price-table-full {
-                font-size: 0.8rem;
+                font-size: 0.7rem;
             }
-            
+
             .price-table-full th,
             .price-table-full td {
-                padding: 0.5rem;
+                padding: 0.4rem;
+            }
+
+            .price-section {
+                padding: 1rem;
             }
         }
 
@@ -637,7 +659,9 @@
             <div class="flex items-center justify-between h-20">
                 <div class="flex items-center gap-3">
                     <!-- SVG Logo -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo-svg" aria-label="Logo do Tabelionato" role="img">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="logo-svg" aria-label="Logo do Tabelionato" role="img">
                         <line x1="3" x2="21" y1="22" y2="22"></line>
                         <line x1="6" x2="6" y1="18" y2="11"></line>
                         <line x1="10" x2="10" y1="18" y2="11"></line>
@@ -654,25 +678,30 @@
                 <div class="hidden md:flex items-center gap-8">
                     <a href="#home" class="nav-link text-white/80 hover:text-white" aria-current="page">Início</a>
                     <a href="#servicos" class="nav-link text-white/80 hover:text-white">Serviços</a>
-                    <a href="#" onclick="openPriceModal(); return false;" class="nav-link text-white/80 hover:text-white">Tabela</a>
-                    <a href="#noticias" class="nav-link text-white/80 hover:text-white" onclick="showNewsSection()">Notícias</a>
+                    <a href="#" onclick="openPriceModal(); return false;"
+                        class="nav-link text-white/80 hover:text-white">Tabela</a>
+                    <a href="#noticias" class="nav-link text-white/80 hover:text-white"
+                        onclick="showNewsSection()">Notícias</a>
                     <a href="#contato" class="nav-link text-white/80 hover:text-white">Contato</a>
                 </div>
 
                 <!-- Mobile menu button (simplificado) -->
-                <button class="md:hidden text-white focus:outline-none focus:ring-2 focus:ring-[#d4af37]" aria-label="Menu mobile" onclick="toggleMobileMenu()">
+                <button class="md:hidden text-white focus:outline-none focus:ring-2 focus:ring-[#d4af37]"
+                    aria-label="Menu mobile" onclick="toggleMobileMenu()">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
         </div>
-        
+
         <!-- Mobile menu (simplificado) -->
         <div id="mobile-menu" class="md:hidden hidden glass border-t border-white/10 py-4">
             <div class="flex flex-col items-center gap-4">
                 <a href="#home" class="text-white/80 hover:text-white" onclick="toggleMobileMenu()">Início</a>
                 <a href="#servicos" class="text-white/80 hover:text-white" onclick="toggleMobileMenu()">Serviços</a>
-                <a href="#" onclick="openPriceModal(); toggleMobileMenu(); return false;" class="text-white/80 hover:text-white">Tabela</a>
-                <a href="#noticias" class="text-white/80 hover:text-white" onclick="showNewsSection(); toggleMobileMenu()">Notícias</a>
+                <a href="#" onclick="openPriceModal(); toggleMobileMenu(); return false;"
+                    class="text-white/80 hover:text-white">Tabela</a>
+                <a href="#noticias" class="text-white/80 hover:text-white"
+                    onclick="showNewsSection(); toggleMobileMenu()">Notícias</a>
                 <a href="#contato" class="text-white/80 hover:text-white" onclick="toggleMobileMenu()">Contato</a>
             </div>
         </div>
@@ -681,12 +710,14 @@
     <!-- Main Content Container -->
     <main id="main-content">
         <!-- Hero Section (Clareada) -->
-        <section id="home" class="relative min-h-screen flex items-center overflow-hidden pt-20" aria-label="Seção inicial">
+        <section id="home" class="relative min-h-screen flex items-center overflow-hidden pt-20"
+            aria-label="Seção inicial">
             <div class="hero-bg absolute inset-0"></div>
             <div class="hero-overlay absolute inset-0"></div>
 
             <!-- Animated Elements -->
-            <div class="absolute top-20 left-10 w-72 h-72 bg-[#d4af37]/20 rounded-full blur-3xl animate-pulse-custom"></div>
+            <div class="absolute top-20 left-10 w-72 h-72 bg-[#d4af37]/20 rounded-full blur-3xl animate-pulse-custom">
+            </div>
             <div class="absolute bottom-20 right-10 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse-custom"
                 style="animation-delay: 1s;"></div>
 
@@ -714,9 +745,10 @@
                     </p>
 
                     <div class="flex flex-wrap gap-4 fade-in-up" style="animation-delay: 0.6s;">
-                        <a href="#" onclick="openPriceModal(); return false;" class="btn-primary inline-block" aria-label="Ver tabela de preços">
+                        <a href="#" onclick="openPriceModal(); return false;" class="btn-primary inline-block"
+                            aria-label="Ver tabela de preços">
                             <i class="fas fa-scale-balanced mr-2" aria-hidden="true"></i>
-                            Ver Tabela de Preços
+                            Ver Tabela de Preços 2026
                         </a>
                         <a href="https://see.tjgo.jus.br/buscas" target="_blank" rel="noopener noreferrer"
                             class="btn-outline inline-block" aria-label="Consultar selo digital (abre em nova aba)">
@@ -736,7 +768,8 @@
         </section>
 
         <!-- Services Section -->
-        <section id="servicos" class="py-24 relative bg-gradient-to-b from-[#0a1628] via-[#0d1d35] to-[#0a1628]" aria-label="Serviços">
+        <section id="servicos" class="py-24 relative bg-gradient-to-b from-[#0a1628] via-[#0d1d35] to-[#0a1628]"
+            aria-label="Serviços">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
                     <span class="text-[#d4af37] font-medium tracking-wider uppercase text-sm">Nossos Serviços</span>
@@ -744,7 +777,8 @@
                         Soluções Notariais Completas
                     </h2>
                     <p class="text-slate-400 max-w-2xl mx-auto text-lg">
-                        Oferecemos uma gama completa de serviços notariais com a mais alta qualidade e segurança jurídica.
+                        Oferecemos uma gama completa de serviços notariais com a mais alta qualidade e segurança
+                        jurídica.
                     </p>
                 </div>
 
@@ -777,13 +811,14 @@
                                     </h3>
                                     <p class="text-slate-400">Verifique a autenticidade do selo digital</p>
                                 </div>
-                                <i
-                                    class="fas fa-external-link text-slate-500 group-hover:text-[#d4af37] transition-colors" aria-hidden="true"></i>
+                                <i class="fas fa-external-link text-slate-500 group-hover:text-[#d4af37] transition-colors"
+                                    aria-hidden="true"></i>
                             </div>
                         </div>
                     </a>
 
-                    <a href="https://www.e-notariado.org.br/customer/service-providers" target="_blank" rel="noopener noreferrer" class="group">
+                    <a href="https://www.e-notariado.org.br/customer/service-providers" target="_blank"
+                        rel="noopener noreferrer" class="group">
                         <div class="glass rounded-2xl p-8 hover:border-[#d4af37]/50 transition-all duration-500">
                             <div class="flex items-start justify-between">
                                 <div>
@@ -797,8 +832,8 @@
                                     </h3>
                                     <p class="text-slate-400">Acesse a plataforma digital de serviços notariais</p>
                                 </div>
-                                <i
-                                    class="fas fa-external-link text-slate-500 group-hover:text-[#d4af37] transition-colors" aria-hidden="true"></i>
+                                <i class="fas fa-external-link text-slate-500 group-hover:text-[#d4af37] transition-colors"
+                                    aria-hidden="true"></i>
                             </div>
                         </div>
                     </a>
@@ -862,17 +897,17 @@
                             <i class="fas fa-envelope text-3xl text-[#d4af37]" aria-hidden="true"></i>
                         </div>
                         <h3 class="text-xl font-bold text-white mb-2">E-mail</h3>
-                        <p class="text-[#d4af37] break-all">contato@cartoriodecavalcante.com.br</p>
-                        <p class="text-slate-500 text-sm mt-2">Resposta em até 24h</p>
+                        <p class="text-[#d4af37] break-all">tabelionatocvc@gmail.com</p>
                     </div>
                 </div>
 
-                <!-- Route Button -->
+                <!-- Route Button Atualizado -->
                 <div class="text-center mt-12">
-                    <a href="https://www.google.com/maps/dir//Rua+208,+Quadra+79,+Lote+01+–+Setor+Morro+Encantado+Cavalcante+GO+73790-000"
+                    <a href="https://www.google.com/maps/place/13%C2%B047'45.0%22S+47%C2%B026'47.0%22W/@-13.7958184,-47.4489609,957m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d-13.7958184!4d-47.446386?hl=pt-BR&entry=ttu&g_ep=EgoyMDI2MDIxNy4wIKXMDSoASAFQAw%3D%3D"
                         target="_blank" rel="noopener noreferrer"
                         class="inline-flex items-center gap-3 px-8 py-4 bg-[#d4af37] text-[#0a1628] rounded-lg font-semibold hover:bg-[#e5c158] transition-all group">
-                        <i class="fas fa-map-marked-alt group-hover:scale-110 transition-transform" aria-hidden="true"></i>
+                        <i class="fas fa-map-marked-alt group-hover:scale-110 transition-transform"
+                            aria-hidden="true"></i>
                         <span>Traçar Rota no Google Maps</span>
                     </a>
                 </div>
@@ -883,143 +918,823 @@
     <!-- News Detail Page (hidden by default) -->
     <div id="news-detail-page" style="display: none;" role="region" aria-label="Detalhes da notícia"></div>
 
-    <!-- Price Modal -->
+    <!-- Price Modal - Tabela Atualizada 2026 -->
     <div id="priceModal" class="modal" role="dialog" aria-modal="true" aria-label="Tabela de preços">
         <div class="modal-content price-modal">
             <button class="close-button" onclick="closePriceModal()" aria-label="Fechar">&times;</button>
-            <h2 class="text-3xl text-center mb-6"><i class="fas fa-scale-balanced mr-3" aria-hidden="true"></i>Tabela de Emolumentos 2023</h2>
-            <p class="text-center text-slate-400 mb-8">Conforme Provimento nº 094/2022 CGJ-GO</p>
-            
+            <h2 class="text-3xl text-center mb-2"><i class="fas fa-scale-balanced mr-3" aria-hidden="true"></i>Tabela de
+                Emolumentos 2026</h2>
+            <p class="text-center text-slate-400 mb-4">Reajuste: Emolumentos 4,46% (Provimento nº 179/2025) | Taxa
+                Judiciária 4,26%</p>
+            <p class="text-center text-slate-500 text-sm mb-6">Valores em R$ - Consulte o cartório para casos
+                específicos e programas habitacionais</p>
+
+            <!-- Escrituras em Geral -->
             <div class="price-section">
-                <h3>Escrituras Públicas</h3>
-                <table class="price-table-full">
-                    <caption class="sr-only">Tabela de preços para escrituras públicas</caption>
-                    <thead>
-                        <tr>
-                            <th scope="col">Cód.</th>
-                            <th scope="col">Descrição</th>
-                            <th scope="col">Emolumento</th>
-                            <th scope="col">Taxas</th>
-                            <th scope="col">Total</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>63 A I</td><td>Escritura completa até R$ 587,03</td><td>R$ 99,98</td><td>R$ 76,38</td><td class="total">R$ 176,35</td></tr>
-                        <tr><td>63 A II</td><td>Escritura completa até R$ 1.174,07</td><td>R$ 151,63</td><td>R$ 89,93</td><td class="total">R$ 241,56</td></tr>
-                        <tr><td>63 A III</td><td>Escritura completa até R$ 2.348,13</td><td>R$ 204,95</td><td>R$ 103,93</td><td class="total">R$ 308,88</td></tr>
-                        <tr><td>63 A IV</td><td>Escritura completa até R$ 4.696,26</td><td>R$ 286,57</td><td>R$ 125,35</td><td class="total">R$ 411,92</td></tr>
-                        <tr><td>63 A V</td><td>Escritura completa até R$ 9.392,52</td><td>R$ 571,50</td><td>R$ 200,15</td><td class="total">R$ 771,65</td></tr>
-                        <tr><td>63 A VI</td><td>Escritura completa até R$ 14.088,79</td><td>R$ 611,48</td><td>R$ 210,64</td><td class="total">R$ 822,12</td></tr>
-                        <tr><td>63 B</td><td>Escritura completa sem valor econômico</td><td>R$ 169,96</td><td>R$ 94,74</td><td class="total">R$ 264,70</td></tr>
-                        <tr><td>63 C</td><td>Escritura completa de quitação</td><td>R$ 169,96</td><td>R$ 94,74</td><td class="total">R$ 264,70</td></tr>
-                    </tbody>
-                </table>
+                <h3>📝 Escrituras em Geral (Cód. 63 A I a XVI)</h3>
+                <div class="overflow-x-auto">
+                    <table class="price-table-full">
+                        <thead>
+                            <tr>
+                                <th scope="col">Cód.</th>
+                                <th scope="col">Faixa de Valor (R$)</th>
+                                <th scope="col">Emolumento</th>
+                                <th scope="col">Taxa Jud.</th>
+                                <th scope="col">ISS (5%)</th>
+                                <th scope="col">Fundos (24,25%)</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>63 A I</td>
+                                <td>até 653,80</td>
+                                <td class="valor">111,35</td>
+                                <td class="valor">57,54</td>
+                                <td class="valor">5,57</td>
+                                <td class="valor">27,00</td>
+                                <td class="total valor">201,46</td>
+                            </tr>
+                            <tr>
+                                <td>63 A II</td>
+                                <td>até 1.307,62</td>
+                                <td class="valor">168,88</td>
+                                <td class="valor">57,54</td>
+                                <td class="valor">8,44</td>
+                                <td class="valor">40,95</td>
+                                <td class="total valor">275,81</td>
+                            </tr>
+                            <tr>
+                                <td>63 A III</td>
+                                <td>até 2.615,24</td>
+                                <td class="valor">228,27</td>
+                                <td class="valor">57,54</td>
+                                <td class="valor">11,41</td>
+                                <td class="valor">55,36</td>
+                                <td class="total valor">352,58</td>
+                            </tr>
+                            <tr>
+                                <td>63 A IV</td>
+                                <td>até 5.230,47</td>
+                                <td class="valor">319,17</td>
+                                <td class="valor">57,54</td>
+                                <td class="valor">15,96</td>
+                                <td class="valor">77,40</td>
+                                <td class="total valor">470,07</td>
+                            </tr>
+                            <tr>
+                                <td>63 A V</td>
+                                <td>até 10.460,94</td>
+                                <td class="valor">636,51</td>
+                                <td class="valor">57,54</td>
+                                <td class="valor">31,83</td>
+                                <td class="valor">154,35</td>
+                                <td class="total valor">880,23</td>
+                            </tr>
+                            <tr>
+                                <td>63 A VI</td>
+                                <td>até 15.691,43</td>
+                                <td class="valor">681,04</td>
+                                <td class="valor">57,54</td>
+                                <td class="valor">34,05</td>
+                                <td class="valor">165,15</td>
+                                <td class="total valor">937,78</td>
+                            </tr>
+                            <tr>
+                                <td>63 A VII</td>
+                                <td>até 26.152,37</td>
+                                <td class="valor">862,90</td>
+                                <td class="valor">57,54</td>
+                                <td class="valor">43,15</td>
+                                <td class="valor">209,25</td>
+                                <td class="total valor">1.172,84</td>
+                            </tr>
+                            <tr>
+                                <td>63 A VIII</td>
+                                <td>até 39.228,54</td>
+                                <td class="valor">1.091,15</td>
+                                <td class="valor">57,54</td>
+                                <td class="valor">54,56</td>
+                                <td class="valor">264,60</td>
+                                <td class="total valor">1.467,85</td>
+                            </tr>
+                            <tr>
+                                <td>63 A IX</td>
+                                <td>até 52.304,74</td>
+                                <td class="valor">1.456,73</td>
+                                <td class="valor">57,54</td>
+                                <td class="valor">72,84</td>
+                                <td class="valor">353,26</td>
+                                <td class="total valor">1.940,37</td>
+                            </tr>
+                            <tr>
+                                <td>63 A X</td>
+                                <td>até 65.380,92</td>
+                                <td class="valor">1.729,50</td>
+                                <td class="valor">57,54</td>
+                                <td class="valor">86,48</td>
+                                <td class="valor">419,40</td>
+                                <td class="total valor">2.292,92</td>
+                            </tr>
+                            <tr>
+                                <td>63 A XI</td>
+                                <td>até 104.609,47</td>
+                                <td class="valor">2.273,23</td>
+                                <td class="valor">57,54</td>
+                                <td class="valor">113,66</td>
+                                <td class="valor">551,26</td>
+                                <td class="total valor">2.995,69</td>
+                            </tr>
+                            <tr>
+                                <td>63 A XII</td>
+                                <td>até 156.914,21</td>
+                                <td class="valor">3.408,91</td>
+                                <td class="valor">57,54</td>
+                                <td class="valor">170,45</td>
+                                <td class="valor">826,66</td>
+                                <td class="total valor">4.463,56</td>
+                            </tr>
+                            <tr>
+                                <td>63 A XIII</td>
+                                <td>até 261.523,68</td>
+                                <td class="valor">4.166,03</td>
+                                <td class="valor">115,05</td>
+                                <td class="valor">208,30</td>
+                                <td class="valor">1.010,26</td>
+                                <td class="total valor">5.499,64</td>
+                            </tr>
+                            <tr>
+                                <td>63 A XIV</td>
+                                <td>até 392.285,51</td>
+                                <td class="valor">4.923,17</td>
+                                <td class="valor">230,16</td>
+                                <td class="valor">246,16</td>
+                                <td class="valor">1.193,87</td>
+                                <td class="total valor">6.593,36</td>
+                            </tr>
+                            <tr>
+                                <td>63 A XV</td>
+                                <td>até 523.047,35</td>
+                                <td class="valor">5.680,28</td>
+                                <td class="valor">230,16</td>
+                                <td class="valor">284,01</td>
+                                <td class="valor">1.377,47</td>
+                                <td class="total valor">7.571,92</td>
+                            </tr>
+                            <tr>
+                                <td>63 A XVI</td>
+                                <td>até 575.478,22</td>
+                                <td class="valor">6.062,56</td>
+                                <td class="valor">230,16</td>
+                                <td class="valor">303,13</td>
+                                <td class="valor">1.470,17</td>
+                                <td class="total valor">8.066,02</td>
+                            </tr>
+                            <tr>
+                                <td>63 A XVI a</td>
+                                <td>até 1.150.956,52</td>
+                                <td class="valor">6.062,56</td>
+                                <td class="valor">345,33</td>
+                                <td class="valor">303,13</td>
+                                <td class="valor">1.470,17</td>
+                                <td class="total valor">8.181,19</td>
+                            </tr>
+                            <tr>
+                                <td>63 A XVI b</td>
+                                <td>acima de 1.150.956,52</td>
+                                <td class="valor">6.062,56</td>
+                                <td class="valor">575,42</td>
+                                <td class="valor">303,13</td>
+                                <td class="valor">1.470,17</td>
+                                <td class="total valor">8.411,28</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
+            <!-- Escrituras com mais de um contrato -->
             <div class="price-section">
-                <h3>Procurações</h3>
-                <table class="price-table-full">
-                    <caption class="sr-only">Tabela de preços para procurações</caption>
-                    <thead>
-                        <tr>
-                            <th scope="col">Cód.</th>
-                            <th scope="col">Descrição</th>
-                            <th scope="col">Emolumento</th>
-                            <th scope="col">Taxas</th>
-                            <th scope="col">Total</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>64 II</td><td>Procuração Ad Judicia</td><td>R$ 51,65</td><td>R$ 30,98</td><td class="total">R$ 82,63</td></tr>
-                        <tr><td>64 III</td><td>Procuração Ad Negotia</td><td>R$ 84,96</td><td>R$ 39,72</td><td class="total">R$ 124,68</td></tr>
-                        <tr><td>64 IV</td><td>Procuração outras finalidades</td><td>R$ 66,63</td><td>R$ 34,91</td><td class="total">R$ 101,54</td></tr>
-                        <tr><td>64 - 1a nota</td><td>Por outorgante que acrescer</td><td>R$ 6,67</td><td>R$ 1,75</td><td class="total">R$ 8,42</td></tr>
-                    </tbody>
-                </table>
+                <h3>📑 Escrituras com mais de um contrato (2ª nota)</h3>
+                <div class="overflow-x-auto">
+                    <table class="price-table-full">
+                        <thead>
+                            <tr>
+                                <th scope="col">Cód.</th>
+                                <th scope="col">Faixa (R$)</th>
+                                <th scope="col">Emol.</th>
+                                <th scope="col">Taxa</th>
+                                <th scope="col">ISS</th>
+                                <th scope="col">Fundos</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>63 - 2a a</td>
+                                <td>até 653,80</td>
+                                <td class="valor">111,35</td>
+                                <td class="valor">57,54</td>
+                                <td class="valor">5,57</td>
+                                <td class="valor">27,00</td>
+                                <td class="total valor">201,46</td>
+                            </tr>
+                            <tr>
+                                <td>63 - 2a b</td>
+                                <td>até 1.307,62</td>
+                                <td class="valor">168,88</td>
+                                <td class="valor">57,54</td>
+                                <td class="valor">8,44</td>
+                                <td class="valor">40,95</td>
+                                <td class="total valor">275,81</td>
+                            </tr>
+                            <tr>
+                                <td>63 - 2a c</td>
+                                <td>até 2.615,24</td>
+                                <td class="valor">228,27</td>
+                                <td class="valor">57,54</td>
+                                <td class="valor">11,41</td>
+                                <td class="valor">55,36</td>
+                                <td class="total valor">352,58</td>
+                            </tr>
+                            <tr>
+                                <td>63 - 2a d</td>
+                                <td>até 5.230,47</td>
+                                <td class="valor">319,17</td>
+                                <td class="valor">57,54</td>
+                                <td class="valor">15,96</td>
+                                <td class="valor">77,40</td>
+                                <td class="total valor">470,07</td>
+                            </tr>
+                            <tr>
+                                <td>63 - 2a e</td>
+                                <td>até 10.460,94</td>
+                                <td class="valor">636,51</td>
+                                <td class="valor">57,54</td>
+                                <td class="valor">31,83</td>
+                                <td class="valor">154,35</td>
+                                <td class="total valor">880,23</td>
+                            </tr>
+                            <tr>
+                                <td>63 - 2a f</td>
+                                <td>até 15.691,43</td>
+                                <td class="valor">681,04</td>
+                                <td class="valor">57,54</td>
+                                <td class="valor">34,05</td>
+                                <td class="valor">165,15</td>
+                                <td class="total valor">937,78</td>
+                            </tr>
+                            <tr>
+                                <td>63 - 2a g</td>
+                                <td>até 26.152,37</td>
+                                <td class="valor">862,90</td>
+                                <td class="valor">57,54</td>
+                                <td class="valor">43,15</td>
+                                <td class="valor">209,25</td>
+                                <td class="total valor">1.172,84</td>
+                            </tr>
+                            <tr>
+                                <td>63 - 2a h</td>
+                                <td>até 39.228,54</td>
+                                <td class="valor">1.091,15</td>
+                                <td class="valor">57,54</td>
+                                <td class="valor">54,56</td>
+                                <td class="valor">264,60</td>
+                                <td class="total valor">1.467,85</td>
+                            </tr>
+                            <tr>
+                                <td>63 - 2a i</td>
+                                <td>até 52.304,74</td>
+                                <td class="valor">1.456,73</td>
+                                <td class="valor">57,54</td>
+                                <td class="valor">72,84</td>
+                                <td class="valor">353,26</td>
+                                <td class="total valor">1.940,37</td>
+                            </tr>
+                            <tr>
+                                <td>63 - 2a j</td>
+                                <td>até 65.380,92</td>
+                                <td class="valor">1.729,50</td>
+                                <td class="valor">57,54</td>
+                                <td class="valor">86,48</td>
+                                <td class="valor">419,40</td>
+                                <td class="total valor">2.292,92</td>
+                            </tr>
+                            <tr>
+                                <td>63 - 2a k</td>
+                                <td>até 104.609,47</td>
+                                <td class="valor">2.273,23</td>
+                                <td class="valor">57,54</td>
+                                <td class="valor">113,66</td>
+                                <td class="valor">551,26</td>
+                                <td class="total valor">2.995,69</td>
+                            </tr>
+                            <tr>
+                                <td>63 - 2a l</td>
+                                <td>até 156.914,21</td>
+                                <td class="valor">3.408,91</td>
+                                <td class="valor">57,54</td>
+                                <td class="valor">170,45</td>
+                                <td class="valor">826,66</td>
+                                <td class="total valor">4.463,56</td>
+                            </tr>
+                            <tr>
+                                <td>63 - 2a m</td>
+                                <td>até 261.523,68</td>
+                                <td class="valor">4.166,03</td>
+                                <td class="valor">115,05</td>
+                                <td class="valor">208,30</td>
+                                <td class="valor">1.010,26</td>
+                                <td class="total valor">5.499,64</td>
+                            </tr>
+                            <tr>
+                                <td>63 - 2a n</td>
+                                <td>até 392.285,51</td>
+                                <td class="valor">4.923,17</td>
+                                <td class="valor">230,16</td>
+                                <td class="valor">246,16</td>
+                                <td class="valor">1.193,87</td>
+                                <td class="total valor">6.593,36</td>
+                            </tr>
+                            <tr>
+                                <td>63 - 2a o</td>
+                                <td>até 523.047,35</td>
+                                <td class="valor">5.680,28</td>
+                                <td class="valor">230,16</td>
+                                <td class="valor">284,01</td>
+                                <td class="valor">1.377,47</td>
+                                <td class="total valor">7.571,92</td>
+                            </tr>
+                            <tr>
+                                <td>63 - 2a p</td>
+                                <td>acima 523.047,35</td>
+                                <td class="valor">5.680,28</td>
+                                <td class="valor">230,16</td>
+                                <td class="valor">284,01</td>
+                                <td class="valor">1.377,47</td>
+                                <td class="total valor">7.571,92</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
+            <!-- Procurações -->
             <div class="price-section">
-                <h3>Reconhecimento e Autenticação</h3>
-                <table class="price-table-full">
-                    <caption class="sr-only">Tabela de preços para reconhecimento de firma e autenticação</caption>
-                    <thead>
-                        <tr>
-                            <th scope="col">Cód.</th>
-                            <th scope="col">Descrição</th>
-                            <th scope="col">Emolumento</th>
-                            <th scope="col">Taxas</th>
-                            <th scope="col">Total</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>73 II</td><td>Reconhecimento de firma digital impressa</td><td>R$ 16,67</td><td>R$ 4,38</td><td class="total">R$ 21,05</td></tr>
-                        <tr><td>71 I</td><td>Autenticação de cópia por página</td><td>R$ 4,99</td><td>R$ 1,31</td><td class="total">R$ 6,30</td></tr>
-                        <tr><td>71 II</td><td>Autenticação digitalizada e guardada</td><td>R$ 10,00</td><td>R$ 2,63</td><td class="total">R$ 12,63</td></tr>
-                    </tbody>
-                </table>
+                <h3>📜 Procurações</h3>
+                <div class="overflow-x-auto">
+                    <table class="price-table-full">
+                        <thead>
+                            <tr>
+                                <th scope="col">Cód.</th>
+                                <th scope="col">Descrição</th>
+                                <th scope="col">Emol.</th>
+                                <th scope="col">ISS</th>
+                                <th scope="col">Fundos</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>64 II</td>
+                                <td>Ad Judicia</td>
+                                <td class="valor">55,68</td>
+                                <td class="valor">2,78</td>
+                                <td class="valor">13,50</td>
+                                <td class="total valor">71,96</td>
+                            </tr>
+                            <tr>
+                                <td>64 III</td>
+                                <td>Ad Negotia</td>
+                                <td class="valor">84,44</td>
+                                <td class="valor">4,22</td>
+                                <td class="valor">20,48</td>
+                                <td class="total valor">109,14</td>
+                            </tr>
+                            <tr>
+                                <td>64 IV</td>
+                                <td>Outras finalidades</td>
+                                <td class="valor">114,14</td>
+                                <td class="valor">5,71</td>
+                                <td class="valor">27,68</td>
+                                <td class="total valor">147,53</td>
+                            </tr>
+                            <tr>
+                                <td>64 - 1a nota</td>
+                                <td>Por outorgante que acrescer</td>
+                                <td class="valor">159,59</td>
+                                <td class="valor">7,98</td>
+                                <td class="valor">38,70</td>
+                                <td class="total valor">206,27</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
+            <!-- Reconhecimento e Autenticação -->
             <div class="price-section">
-                <h3>Ata Notarial</h3>
-                <table class="price-table-full">
-                    <caption class="sr-only">Tabela de preços para ata notarial</caption>
-                    <thead>
-                        <tr>
-                            <th scope="col">Cód.</th>
-                            <th scope="col">Descrição</th>
-                            <th scope="col">Emolumento</th>
-                            <th scope="col">Taxas</th>
-                            <th scope="col">Total</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>72</td><td>Ata Notarial para registro de chancela mecânica</td><td>R$ 204,95</td><td>R$ 53,80</td><td class="total">R$ 258,75</td></tr>
-                        <tr><td>63 A I</td><td>Ata Notarial Usucapião até R$ 587,03</td><td>R$ 99,98</td><td>R$ 76,38</td><td class="total">R$ 176,35</td></tr>
-                    </tbody>
-                </table>
+                <h3>✍️ Reconhecimento e Autenticação</h3>
+                <div class="overflow-x-auto">
+                    <table class="price-table-full">
+                        <thead>
+                            <tr>
+                                <th scope="col">Cód.</th>
+                                <th scope="col">Descrição</th>
+                                <th scope="col">Emol.</th>
+                                <th scope="col">ISS</th>
+                                <th scope="col">Fundos</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>73 II</td>
+                                <td>Reconhecimento de firma digital impressa</td>
+                                <td class="valor">21,54</td>
+                                <td class="valor">1,08</td>
+                                <td class="valor">5,22</td>
+                                <td class="total valor">27,84</td>
+                            </tr>
+                            <tr>
+                                <td>71 I</td>
+                                <td>Autenticação de cópia (página)</td>
+                                <td class="valor">6,45</td>
+                                <td class="valor">0,32</td>
+                                <td class="valor">1,56</td>
+                                <td class="total valor">8,33</td>
+                            </tr>
+                            <tr>
+                                <td>71 II</td>
+                                <td>Autenticação digitalizada e guardada</td>
+                                <td class="valor">12,93</td>
+                                <td class="valor">0,65</td>
+                                <td class="valor">3,14</td>
+                                <td class="total valor">16,72</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
+            <!-- Ata Notarial -->
             <div class="price-section">
-                <h3>Certidões</h3>
-                <table class="price-table-full">
-                    <caption class="sr-only">Tabela de preços para certidões</caption>
-                    <thead>
-                        <tr>
-                            <th scope="col">Cód.</th>
-                            <th scope="col">Descrição</th>
-                            <th scope="col">Emolumento</th>
-                            <th scope="col">Taxas</th>
-                            <th scope="col">Total</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>98</td><td>Certidões ou traslados</td><td>R$ 51,65</td><td>R$ 30,98</td><td class="total">R$ 82,63</td></tr>
-                        <tr><td>99</td><td>Certidão por página que acresce</td><td>R$ 3,34</td><td>R$ 0,88</td><td class="total">R$ 4,22</td></tr>
-                    </tbody>
-                </table>
+                <h3>📋 Ata Notarial</h3>
+                <div class="overflow-x-auto">
+                    <table class="price-table-full">
+                        <thead>
+                            <tr>
+                                <th scope="col">Cód.</th>
+                                <th scope="col">Descrição</th>
+                                <th scope="col">Emol.</th>
+                                <th scope="col">Taxa</th>
+                                <th scope="col">ISS</th>
+                                <th scope="col">Fundos</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>72</td>
+                                <td>Chancela mecânica</td>
+                                <td class="valor">228,27</td>
+                                <td class="valor">57,54</td>
+                                <td class="valor">11,41</td>
+                                <td class="valor">55,36</td>
+                                <td class="total valor">352,58</td>
+                            </tr>
+                            <tr>
+                                <td>63 A I</td>
+                                <td>Usucapião (até 587,03)</td>
+                                <td class="valor">111,35</td>
+                                <td class="valor">57,54</td>
+                                <td class="valor">5,57</td>
+                                <td class="valor">27,00</td>
+                                <td class="total valor">201,46</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
+            <!-- Certidões -->
             <div class="price-section">
-                <h3>Testamentos</h3>
-                <table class="price-table-full">
-                    <caption class="sr-only">Tabela de preços para testamentos</caption>
-                    <thead>
-                        <tr>
-                            <th scope="col">Cód.</th>
-                            <th scope="col">Descrição</th>
-                            <th scope="col">Emolumento</th>
-                            <th scope="col">Taxas</th>
-                            <th scope="col">Total</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>65 I A</td><td>Testamento instituição de herdeiro</td><td>R$ 304,91</td><td>R$ 116,05</td><td class="total">R$ 420,96</td></tr>
-                        <tr><td>65 I B</td><td>Testamento com outras disposições</td><td>R$ 459,86</td><td>R$ 156,72</td><td class="total">R$ 616,58</td></tr>
-                    </tbody>
-                </table>
+                <h3>📄 Certidões</h3>
+                <div class="overflow-x-auto">
+                    <table class="price-table-full">
+                        <thead>
+                            <tr>
+                                <th scope="col">Cód.</th>
+                                <th scope="col">Descrição</th>
+                                <th scope="col">Emol.</th>
+                                <th scope="col">Taxa</th>
+                                <th scope="col">ISS</th>
+                                <th scope="col">Fundos</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>98</td>
+                                <td>Certidões ou traslados</td>
+                                <td class="valor">55,68</td>
+                                <td class="valor">17,42</td>
+                                <td class="valor">2,78</td>
+                                <td class="valor">13,50</td>
+                                <td class="total valor">89,38</td>
+                            </tr>
+                            <tr>
+                                <td>99</td>
+                                <td>Por página que acresce</td>
+                                <td class="valor">4,22</td>
+                                <td class="valor">–</td>
+                                <td class="valor">0,21</td>
+                                <td class="valor">1,02</td>
+                                <td class="total valor">5,45</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
-            <p class="text-center text-slate-400 text-sm mt-6">* Valores sujeitos a alteração conforme reajustes da CGJ-GO</p>
+            <!-- Testamentos -->
+            <div class="price-section">
+                <h3>⚖️ Testamentos</h3>
+                <div class="overflow-x-auto">
+                    <table class="price-table-full">
+                        <thead>
+                            <tr>
+                                <th scope="col">Cód.</th>
+                                <th scope="col">Descrição</th>
+                                <th scope="col">Emol.</th>
+                                <th scope="col">Taxa</th>
+                                <th scope="col">ISS</th>
+                                <th scope="col">Fundos</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>65 I A</td>
+                                <td>Instituição de herdeiro</td>
+                                <td class="valor">319,17</td>
+                                <td class="valor">57,54</td>
+                                <td class="valor">15,96</td>
+                                <td class="valor">77,40</td>
+                                <td class="total valor">470,07</td>
+                            </tr>
+                            <tr>
+                                <td>65 I B</td>
+                                <td>Outras disposições</td>
+                                <td class="valor">1.456,73</td>
+                                <td class="valor">57,54</td>
+                                <td class="valor">72,84</td>
+                                <td class="valor">353,26</td>
+                                <td class="total valor">1.940,37</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Protestos -->
+            <div class="price-section">
+                <h3>📢 Protestos de Títulos</h3>
+                <div class="overflow-x-auto">
+                    <table class="price-table-full">
+                        <thead>
+                            <tr>
+                                <th scope="col">Cód.</th>
+                                <th scope="col">Valor do Título (R$)</th>
+                                <th scope="col">Emol.</th>
+                                <th scope="col">ISS</th>
+                                <th scope="col">Fundos</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>93 I</td>
+                                <td>até 65,38</td>
+                                <td class="valor">16,68</td>
+                                <td class="valor">0,83</td>
+                                <td class="valor">4,04</td>
+                                <td class="total valor">21,55</td>
+                            </tr>
+                            <tr>
+                                <td>93 II</td>
+                                <td>até 130,76</td>
+                                <td class="valor">24,13</td>
+                                <td class="valor">1,21</td>
+                                <td class="valor">5,85</td>
+                                <td class="total valor">31,19</td>
+                            </tr>
+                            <tr>
+                                <td>93 III</td>
+                                <td>até 261,52</td>
+                                <td class="valor">44,53</td>
+                                <td class="valor">2,23</td>
+                                <td class="valor">10,80</td>
+                                <td class="total valor">57,56</td>
+                            </tr>
+                            <tr>
+                                <td>93 IV</td>
+                                <td>até 392,29</td>
+                                <td class="valor">68,66</td>
+                                <td class="valor">3,43</td>
+                                <td class="valor">16,65</td>
+                                <td class="total valor">88,74</td>
+                            </tr>
+                            <tr>
+                                <td>93 V</td>
+                                <td>até 523,05</td>
+                                <td class="valor">109,48</td>
+                                <td class="valor">5,47</td>
+                                <td class="valor">26,55</td>
+                                <td class="total valor">141,50</td>
+                            </tr>
+                            <tr>
+                                <td>93 VI</td>
+                                <td>até 653,80</td>
+                                <td class="valor">124,33</td>
+                                <td class="valor">6,22</td>
+                                <td class="valor">30,15</td>
+                                <td class="total valor">160,70</td>
+                            </tr>
+                            <tr>
+                                <td>93 VII</td>
+                                <td>até 1.307,62</td>
+                                <td class="valor">168,88</td>
+                                <td class="valor">8,44</td>
+                                <td class="valor">40,95</td>
+                                <td class="total valor">218,27</td>
+                            </tr>
+                            <tr>
+                                <td>93 VIII</td>
+                                <td>até 2.615,24</td>
+                                <td class="valor">228,27</td>
+                                <td class="valor">11,41</td>
+                                <td class="valor">55,36</td>
+                                <td class="total valor">295,04</td>
+                            </tr>
+                            <tr>
+                                <td>93 IX</td>
+                                <td>até 6.538,10</td>
+                                <td class="valor">302,48</td>
+                                <td class="valor">15,12</td>
+                                <td class="valor">73,35</td>
+                                <td class="total valor">390,95</td>
+                            </tr>
+                            <tr>
+                                <td>93 X</td>
+                                <td>até 13.076,18</td>
+                                <td class="valor">458,36</td>
+                                <td class="valor">22,92</td>
+                                <td class="valor">111,15</td>
+                                <td class="total valor">592,43</td>
+                            </tr>
+                            <tr>
+                                <td>93 XI</td>
+                                <td>até 26.152,37</td>
+                                <td class="valor">604,96</td>
+                                <td class="valor">30,25</td>
+                                <td class="valor">146,70</td>
+                                <td class="total valor">781,91</td>
+                            </tr>
+                            <tr>
+                                <td>93 XII</td>
+                                <td>acima 26.152,37</td>
+                                <td class="valor">757,12</td>
+                                <td class="valor">37,86</td>
+                                <td class="valor">183,60</td>
+                                <td class="total valor">978,58</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Liquidação de Títulos -->
+            <div class="price-section">
+                <h3>💵 Liquidação antes da Intimação</h3>
+                <div class="overflow-x-auto">
+                    <table class="price-table-full">
+                        <thead>
+                            <tr>
+                                <th scope="col">Cód.</th>
+                                <th scope="col">Valor (R$)</th>
+                                <th scope="col">Emol.</th>
+                                <th scope="col">ISS</th>
+                                <th scope="col">Fundos</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>96 I</td>
+                                <td>até 65,38</td>
+                                <td class="valor">6,67</td>
+                                <td class="valor">0,33</td>
+                                <td class="valor">1,62</td>
+                                <td class="total valor">8,62</td>
+                            </tr>
+                            <tr>
+                                <td>96 II</td>
+                                <td>até 130,76</td>
+                                <td class="valor">9,65</td>
+                                <td class="valor">0,48</td>
+                                <td class="valor">2,34</td>
+                                <td class="total valor">12,47</td>
+                            </tr>
+                            <tr>
+                                <td>96 III</td>
+                                <td>até 261,52</td>
+                                <td class="valor">17,81</td>
+                                <td class="valor">0,89</td>
+                                <td class="valor">4,32</td>
+                                <td class="total valor">23,02</td>
+                            </tr>
+                            <tr>
+                                <td>96 IV</td>
+                                <td>até 392,29</td>
+                                <td class="valor">27,46</td>
+                                <td class="valor">1,37</td>
+                                <td class="valor">6,66</td>
+                                <td class="total valor">35,49</td>
+                            </tr>
+                            <tr>
+                                <td>96 V</td>
+                                <td>até 523,05</td>
+                                <td class="valor">43,79</td>
+                                <td class="valor">2,19</td>
+                                <td class="valor">10,62</td>
+                                <td class="total valor">56,60</td>
+                            </tr>
+                            <tr>
+                                <td>96 VI</td>
+                                <td>até 653,80</td>
+                                <td class="valor">49,73</td>
+                                <td class="valor">2,49</td>
+                                <td class="valor">12,06</td>
+                                <td class="total valor">64,28</td>
+                            </tr>
+                            <tr>
+                                <td>96 VII</td>
+                                <td>até 1.307,62</td>
+                                <td class="valor">67,55</td>
+                                <td class="valor">3,38</td>
+                                <td class="valor">16,38</td>
+                                <td class="total valor">87,31</td>
+                            </tr>
+                            <tr>
+                                <td>96 VIII</td>
+                                <td>até 2.615,24</td>
+                                <td class="valor">91,31</td>
+                                <td class="valor">4,57</td>
+                                <td class="valor">22,14</td>
+                                <td class="total valor">118,02</td>
+                            </tr>
+                            <tr>
+                                <td>96 IX</td>
+                                <td>até 6.538,10</td>
+                                <td class="valor">120,99</td>
+                                <td class="valor">6,05</td>
+                                <td class="valor">29,34</td>
+                                <td class="total valor">156,38</td>
+                            </tr>
+                            <tr>
+                                <td>96 X</td>
+                                <td>até 13.076,18</td>
+                                <td class="valor">183,34</td>
+                                <td class="valor">9,17</td>
+                                <td class="valor">44,46</td>
+                                <td class="total valor">236,97</td>
+                            </tr>
+                            <tr>
+                                <td>96 XI</td>
+                                <td>até 26.152,37</td>
+                                <td class="valor">241,98</td>
+                                <td class="valor">12,10</td>
+                                <td class="valor">58,68</td>
+                                <td class="total valor">312,76</td>
+                            </tr>
+                            <tr>
+                                <td>96 XII</td>
+                                <td>acima 26.152,37</td>
+                                <td class="valor">302,85</td>
+                                <td class="valor">15,14</td>
+                                <td class="valor">73,44</td>
+                                <td class="total valor">391,43</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <p class="obs-text">* Valores calculados com ISS de 5% e Fundos Estaduais de 24,25% sobre os emolumentos.
+            </p>
+            <p class="obs-text">** Consulte o cartório para programas especiais (PMCMV, FAR, FDS, SFH, Primeira
+                Aquisição) que possuem descontos.</p>
         </div>
     </div>
 
@@ -1029,7 +1744,9 @@
             <div class="flex flex-col md:flex-row justify-between items-center gap-6">
                 <div class="flex items-center gap-3">
                     <!-- SVG Logo no footer -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo-svg" aria-label="Logo do Tabelionato" role="img">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="logo-svg" aria-label="Logo do Tabelionato" role="img">
                         <line x1="3" x2="21" y1="22" y2="22"></line>
                         <line x1="6" x2="6" y1="18" y2="11"></line>
                         <line x1="10" x2="10" y1="18" y2="11"></line>
@@ -1055,7 +1772,8 @@
     <!-- WhatsApp Float Button -->
     <div class="whatsapp-float">
         <a href="https://wa.me/5562996297114?text=Olá!%20Gostaria%20de%20informações%20sobre%20os%20serviços%20do%20Tabelionato%20de%20Cavalcante."
-            target="_blank" rel="noopener noreferrer" class="whatsapp-btn group relative" aria-label="Fale conosco pelo WhatsApp (abre em nova aba)">
+            target="_blank" rel="noopener noreferrer" class="whatsapp-btn group relative"
+            aria-label="Fale conosco pelo WhatsApp (abre em nova aba)">
             <i class="fab fa-whatsapp text-3xl text-white" aria-hidden="true"></i>
             <div
                 class="absolute right-full mr-4 top-1/2 -translate-y-1/2 bg-white text-gray-800 px-4 py-2 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
@@ -1068,26 +1786,38 @@
     <div id="lgpdModal" class="modal" role="dialog" aria-modal="true" aria-label="Política de privacidade LGPD">
         <div class="modal-content">
             <button class="close-button" onclick="closeModal()" aria-label="Fechar">&times;</button>
-            <h2 class="text-2xl"><i class="fas fa-shield-alt mr-2" aria-hidden="true"></i>Política de Proteção de Dados - LGPD</h2>
+            <h2 class="text-2xl"><i class="fas fa-shield-alt mr-2" aria-hidden="true"></i>Política de Proteção de Dados
+                - LGPD</h2>
             <p><strong class="text-[#d4af37]">LEI GERAL DE PROTEÇÃO DE DADOS – LGPD (LEI 13.709/2018)</strong></p>
-            
-            <p>O TABELIONATO DE NOTAS E PROTESTOS DE CAVALCANTE – GO implementou em sua rotina a política de proteção de dados dos usuários de seus serviços, colaboradores e prestadores de serviços, em cumprimento à Lei nº 13.709/2018 (LGPD), que se aplica às serventias extrajudiciais, nos seguintes termos:</p>
+
+            <p>O TABELIONATO DE NOTAS E PROTESTOS DE CAVALCANTE – GO implementou em sua rotina a política de proteção de
+                dados dos usuários de seus serviços, colaboradores e prestadores de serviços, em cumprimento à Lei nº
+                13.709/2018 (LGPD), que se aplica às serventias extrajudiciais, nos seguintes termos:</p>
 
             <div class="legal-text">
-                <p><strong>Art. 1º</strong> – Esta Lei dispõe sobre o tratamento de dados pessoais, inclusive nos meios digitais, por pessoa natural ou por pessoa jurídica de direito público ou privado, com o objetivo de proteger os direitos fundamentais de liberdade e de privacidade e o livre desenvolvimento da personalidade da pessoa natural.</p>
+                <p><strong>Art. 1º</strong> – Esta Lei dispõe sobre o tratamento de dados pessoais, inclusive nos meios
+                    digitais, por pessoa natural ou por pessoa jurídica de direito público ou privado, com o objetivo de
+                    proteger os direitos fundamentais de liberdade e de privacidade e o livre desenvolvimento da
+                    personalidade da pessoa natural.</p>
             </div>
 
             <div class="legal-text">
-                <p><strong>Art. 23, § 4º</strong> – Os serviços notariais e de registro exercidos em caráter privado, por delegação do Poder Público, terão o mesmo tratamento dispensado às pessoas jurídicas referidas no caput deste artigo, nos termos desta Lei.</p>
+                <p><strong>Art. 23, § 4º</strong> – Os serviços notariais e de registro exercidos em caráter privado,
+                    por delegação do Poder Público, terão o mesmo tratamento dispensado às pessoas jurídicas referidas
+                    no caput deste artigo, nos termos desta Lei.</p>
             </div>
 
             <h3 class="text-xl">Nosso Compromisso</h3>
-            <p>Estamos comprometidos com a proteção da sua privacidade e com o tratamento adequado dos seus dados pessoais, conforme determina a legislação vigente. Para mais informações sobre como tratamos seus dados, entre em contato conosco através do e-mail: lgpd@tabelionatocavalcante.com</p>
+            <p>Estamos comprometidos com a proteção da sua privacidade e com o tratamento adequado dos seus dados
+                pessoais, conforme determina a legislação vigente. Para mais informações sobre como tratamos seus dados,
+                entre em contato conosco através do e-mail: lgpd@tabelionatocavalcante.com</p>
 
             <h3 class="text-xl">Encarregado de Proteção de Dados (DPO)</h3>
             <p><i class="fas fa-user text-[#d4af37] mr-2" aria-hidden="true"></i> Nome: João Silva<br>
-            <i class="fas fa-envelope text-[#d4af37] mr-2" aria-hidden="true"></i> E-mail: dpo@tabelionatocavalcante.com<br>
-            <i class="fas fa-phone text-[#d4af37] mr-2" aria-hidden="true"></i> Telefone: (62) 3456-7890</p>
+                <i class="fas fa-envelope text-[#d4af37] mr-2" aria-hidden="true"></i> E-mail:
+                dpo@tabelionatocavalcante.com<br>
+                <i class="fas fa-phone text-[#d4af37] mr-2" aria-hidden="true"></i> Telefone: (62) 3456-7890
+            </p>
         </div>
     </div>
 
@@ -1115,7 +1845,7 @@
             "longitude": "-47.4567"
         },
         "telephone": "+55 62 99629-7114",
-        "email": "contato@cartoriodecavalcante.com.br",
+        "email": "tabelionatocvc@gmail.com",
         "openingHoursSpecification": [
             {
                 "@type": "OpeningHoursSpecification",
@@ -1156,15 +1886,6 @@
     }
     </script>
 
-    <!-- Google Analytics (opcional - substitua pelo seu ID) -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-XXXXXXXXXX');
-    </script> -->
-
     <script>
         // Services Data with icons and gradients
         const services = [
@@ -1181,13 +1902,13 @@
 
         // News Data com conteúdo completo
         const newsData = [
-            { 
+            {
                 id: 1,
-                title: "STF decide sobre usucapião extrajudicial", 
-                source: "Direito", 
-                date: "2026-02-19", 
-                category: "juridico", 
-                icon: "fa-gavel", 
+                title: "STF decide sobre usucapião extrajudicial",
+                source: "Direito",
+                date: "2026-02-19",
+                category: "juridico",
+                icon: "fa-gavel",
                 color: "#8B5CF6",
                 content: `
                     <p>O Supremo Tribunal Federal (STF) decidiu nesta quinta-feira que o usucapião extrajudicial pode ser realizado diretamente em cartórios, sem necessidade de ação judicial, desde que haja concordância de todos os envolvidos.</p>
@@ -1196,13 +1917,13 @@
                     <p>A partir de agora, os cartórios de notas e registro de imóveis estão aptos a realizar todo o processo, desde que atendidos os requisitos legais e havendo consenso entre as partes.</p>
                 `
             },
-            { 
+            {
                 id: 2,
-                title: "Economia: Selic permanece em 13,75%", 
-                source: "Economia", 
-                date: "2026-02-19", 
-                category: "economia", 
-                icon: "fa-chart-line", 
+                title: "Economia: Selic permanece em 13,75%",
+                source: "Economia",
+                date: "2026-02-19",
+                category: "economia",
+                icon: "fa-chart-line",
                 color: "#10B981",
                 content: `
                     <p>O Comitê de Política Monetária (Copom) do Banco Central decidiu manter a taxa básica de juros, a Selic, em 13,75% ao ano, interrompendo o ciclo de quedas iniciado em agosto do ano passado.</p>
@@ -1211,13 +1932,13 @@
                     <p>Especialistas avaliam que a manutenção da Selic pode impactar o crédito imobiliário e o financiamento de imóveis, áreas diretamente relacionadas aos serviços notariais.</p>
                 `
             },
-            { 
+            {
                 id: 3,
-                title: "Cartórios digitais: nova plataforma e-Notariado", 
-                source: "Tecnologia", 
-                date: "2026-02-18", 
-                category: "tecnologia", 
-                icon: "fa-microchip", 
+                title: "Cartórios digitais: nova plataforma e-Notariado",
+                source: "Tecnologia",
+                date: "2026-02-18",
+                category: "tecnologia",
+                icon: "fa-microchip",
                 color: "#3B82F6",
                 content: `
                     <p>A plataforma e-Notariado acaba de lançar uma nova versão com funcionalidades avançadas para realização de atos notariais digitais em todo o Brasil.</p>
@@ -1226,13 +1947,13 @@
                     <p>O Tabelionato de Cavalcante já está totalmente integrado à nova plataforma, oferecendo aos cidadãos a possibilidade de realizar diversos serviços sem sair de casa.</p>
                 `
             },
-            { 
+            {
                 id: 4,
-                title: "Reforma tributária impacta custas cartoriais", 
-                source: "Política", 
-                date: "2026-02-18", 
-                category: "politica", 
-                icon: "fa-landmark", 
+                title: "Reforma tributária impacta custas cartoriais",
+                source: "Política",
+                date: "2026-02-18",
+                category: "politica",
+                icon: "fa-landmark",
                 color: "#F59E0B",
                 content: `
                     <p>A reforma tributária em tramitação no Congresso Nacional pode alterar significativamente a forma de cobrança das custas cartoriais em todo o país.</p>
@@ -1241,13 +1962,13 @@
                     <p>O Colégio Notarial do Brasil já se manifestou favoravelmente à modernização do sistema tributário, mas alerta para a necessidade de preservar a segurança jurídica dos atos praticados.</p>
                 `
             },
-            { 
+            {
                 id: 5,
-                title: "LGPD: cartórios atualizam políticas de dados", 
-                source: "Direito", 
-                date: "2026-02-17", 
-                category: "juridico", 
-                icon: "fa-shield-halved", 
+                title: "LGPD: cartórios atualizam políticas de dados",
+                source: "Direito",
+                date: "2026-02-17",
+                category: "juridico",
+                icon: "fa-shield-halved",
                 color: "#EC4899",
                 content: `
                     <p>Os cartórios brasileiros estão implementando novas políticas de proteção de dados para adequação total à Lei Geral de Proteção de Dados (LGPD).</p>
@@ -1256,13 +1977,13 @@
                     <p>Os usuários podem solicitar informações sobre o tratamento de seus dados através do e-mail lgpd@tabelionatocavalcante.com.</p>
                 `
             },
-            { 
+            {
                 id: 6,
-                title: "Novas regras para protesto de títulos", 
-                source: "Cotidiano", 
-                date: "2026-02-17", 
-                category: "cotidiano", 
-                icon: "fa-file-invoice", 
+                title: "Novas regras para protesto de títulos",
+                source: "Cotidiano",
+                date: "2026-02-17",
+                category: "cotidiano",
+                icon: "fa-file-invoice",
                 color: "#6366F1",
                 content: `
                     <p>Entraram em vigor nesta semana novas regras para o protesto de títulos em todo o estado de Goiás, com o objetivo de modernizar e agilizar os procedimentos.</p>
@@ -1292,7 +2013,7 @@
         function renderNews() {
             const grid = document.getElementById('news-grid');
             if (!grid) return;
-            
+
             grid.innerHTML = newsData.map((news, index) => `
                 <div class="glass rounded-2xl p-6 fade-in-up hover:border-[#d4af37]/30 transition-all cursor-pointer" style="animation-delay: ${index * 0.1}s;" onclick="showNewsDetail(${news.id})" tabindex="0" role="article" aria-label="Notícia: ${news.title}">
                     <div class="flex items-center gap-3 mb-4">
@@ -1333,17 +2054,17 @@
 
             const mainContent = document.getElementById('main-content');
             const newsDetail = document.getElementById('news-detail-page');
-            
+
             // Hide main content, show news detail
             mainContent.style.display = 'none';
             newsDetail.style.display = 'block';
-            
+
             // Scroll to top
             window.scrollTo(0, 0);
-            
+
             // Update page title for SEO
             document.title = `${news.title} | Tabelionato de Cavalcante`;
-            
+
             // Render news detail
             newsDetail.innerHTML = `
                 <div class="news-page">
@@ -1421,13 +2142,13 @@
         function showNewsSection() {
             const mainContent = document.getElementById('main-content');
             const newsDetail = document.getElementById('news-detail-page');
-            
+
             mainContent.style.display = 'block';
             newsDetail.style.display = 'none';
-            
+
             // Restore original title
             document.title = "Tabelionato de Notas e Protestos de Cavalcante/GO | Cartório Oficial";
-            
+
             // Scroll to news section
             document.getElementById('noticias').scrollIntoView({ behavior: 'smooth' });
         }
@@ -1436,12 +2157,12 @@
         function shareNews(platform, newsId) {
             const news = newsData.find(n => n.id === newsId);
             if (!news) return;
-            
+
             const url = window.location.href;
             const text = `Confira esta notícia do Tabelionato de Cavalcante: ${news.title}`;
-            
+
             let shareUrl = '';
-            switch(platform) {
+            switch (platform) {
                 case 'facebook':
                     shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&quote=${encodeURIComponent(text)}`;
                     break;
@@ -1455,7 +2176,7 @@
                     shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`;
                     break;
             }
-            
+
             window.open(shareUrl, '_blank', 'width=600,height=400,noopener,noreferrer');
         }
 
@@ -1488,7 +2209,7 @@
         }
 
         // Fecha o modal se clicar fora dele
-        window.onclick = function(event) {
+        window.onclick = function (event) {
             const modal = document.getElementById('lgpdModal');
             const priceModal = document.getElementById('priceModal');
             if (event.target == modal) {
@@ -1500,7 +2221,7 @@
         }
 
         // Fecha o modal com a tecla ESC
-        document.addEventListener('keydown', function(event) {
+        document.addEventListener('keydown', function (event) {
             if (event.key === 'Escape') {
                 closeModal();
                 closePriceModal();
@@ -1512,12 +2233,12 @@
             anchor.addEventListener('click', function (e) {
                 const href = this.getAttribute('href');
                 if (href === '#') return;
-                
+
                 e.preventDefault();
                 const target = document.querySelector(href);
                 if (target) {
                     target.scrollIntoView({ behavior: 'smooth' });
-                    
+
                     // Update URL without jumping
                     history.pushState(null, null, href);
                 }
@@ -1538,7 +2259,7 @@
             window.showNewsSection = showNewsSection;
             window.shareNews = shareNews;
             window.toggleMobileMenu = toggleMobileMenu;
-            
+
             // Check for hash in URL and scroll to section
             if (window.location.hash) {
                 const target = document.querySelector(window.location.hash);
